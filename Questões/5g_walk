@@ -1,0 +1,1585 @@
+[root@Labs5610 ar]# snmpwalk -v 2c -c Leitura 172.16.1.1 iso.org.dod.internet.mgmt.mib-2.system
+SNMPv2-MIB::sysDescr.0 = STRING: Cisco IOS Software, 2600 Software (C2691-ADVIPSERVICESK9-M), Version 12.4(15)T6, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Mon 07-Jul-08 04:30 by prod_rel_team
+SNMPv2-MIB::sysObjectID.0 = OID: SNMPv2-SMI::enterprises.9.1.122
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (642324) 1:47:03.24
+SNMPv2-MIB::sysContact.0 = STRING: 
+SNMPv2-MIB::sysName.0 = STRING: R2
+SNMPv2-MIB::sysLocation.0 = STRING: 
+SNMPv2-MIB::sysServices.0 = INTEGER: 78
+SNMPv2-MIB::sysORLastChange.0 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORID.1 = OID: SNMPv2-SMI::enterprises.9.7.129
+SNMPv2-MIB::sysORID.2 = OID: SNMPv2-SMI::enterprises.9.7.115
+SNMPv2-MIB::sysORID.3 = OID: SNMPv2-SMI::enterprises.9.7.265
+SNMPv2-MIB::sysORID.4 = OID: SNMPv2-SMI::enterprises.9.7.112
+SNMPv2-MIB::sysORID.5 = OID: SNMPv2-SMI::enterprises.9.7.106
+SNMPv2-MIB::sysORID.6 = OID: SNMPv2-SMI::enterprises.9.7.47
+SNMPv2-MIB::sysORID.7 = OID: SNMPv2-SMI::enterprises.9.7.122
+SNMPv2-MIB::sysORID.8 = OID: SNMPv2-SMI::enterprises.9.7.135
+SNMPv2-MIB::sysORID.9 = OID: SNMPv2-SMI::enterprises.9.7.43
+SNMPv2-MIB::sysORID.10 = OID: SNMPv2-SMI::enterprises.9.7.37
+SNMPv2-MIB::sysORID.11 = OID: SNMPv2-SMI::enterprises.9.7.92
+SNMPv2-MIB::sysORID.12 = OID: SNMPv2-SMI::enterprises.9.7.53
+SNMPv2-MIB::sysORID.13 = OID: SNMPv2-SMI::enterprises.9.7.54
+SNMPv2-MIB::sysORID.14 = OID: SNMPv2-SMI::enterprises.9.7.52
+SNMPv2-MIB::sysORID.15 = OID: SNMPv2-SMI::enterprises.9.7.93
+SNMPv2-MIB::sysORID.16 = OID: SNMPv2-SMI::enterprises.9.7.186
+SNMPv2-MIB::sysORID.17 = OID: SNMPv2-SMI::enterprises.9.7.128
+SNMPv2-MIB::sysORID.18 = OID: SNMPv2-SMI::enterprises.9.7.425
+SNMPv2-MIB::sysORID.19 = OID: SNMPv2-SMI::enterprises.9.7.267
+SNMPv2-MIB::sysORID.20 = OID: SNMPv2-SMI::enterprises.9.7.121
+SNMPv2-MIB::sysORID.21 = OID: SNMPv2-SMI::enterprises.9.7.44
+SNMPv2-MIB::sysORID.22 = OID: SNMPv2-SMI::enterprises.9.7.202
+SNMPv2-MIB::sysORID.23 = OID: SNMPv2-SMI::enterprises.9.7.264
+SNMPv2-MIB::sysORID.24 = OID: SNMPv2-SMI::enterprises.9.7.33
+SNMPv2-MIB::sysORID.25 = OID: SNMPv2-SMI::enterprises.9.7.492
+SNMPv2-MIB::sysORID.26 = OID: SNMPv2-SMI::enterprises.9.7.130
+SNMPv2-MIB::sysORID.27 = OID: SNMPv2-SMI::enterprises.9.7.116
+SNMPv2-MIB::sysORID.28 = OID: SNMPv2-SMI::enterprises.9.7.91
+SNMPv2-MIB::sysORID.29 = OID: SNMPv2-SMI::enterprises.9.7.999
+SNMPv2-MIB::sysORID.30 = OID: SNMPv2-SMI::enterprises.9.7.212
+SNMPv2-MIB::sysORID.31 = OID: SNMPv2-SMI::enterprises.9.7.126
+SNMPv2-MIB::sysORID.32 = OID: SNMPv2-SMI::enterprises.9.7.127
+SNMPv2-MIB::sysORID.33 = OID: SNMPv2-SMI::enterprises.9.7.64
+SNMPv2-MIB::sysORID.34 = OID: SNMPv2-SMI::enterprises.9.7.123
+SNMPv2-MIB::sysORID.35 = OID: SNMPv2-SMI::enterprises.9.7.120
+SNMPv2-MIB::sysORID.36 = OID: SNMPv2-SMI::enterprises.9.7.124
+SNMPv2-MIB::sysORID.37 = OID: SNMPv2-SMI::enterprises.9.7.218
+SNMPv2-MIB::sysORID.38 = OID: SNMPv2-SMI::enterprises.9.7.119
+SNMPv2-MIB::sysORID.39 = OID: SNMPv2-SMI::enterprises.9.7.125
+SNMPv2-MIB::sysORID.40 = OID: SNMPv2-SMI::enterprises.9.7.45
+SNMPv2-MIB::sysORID.41 = OID: SNMPv2-SMI::enterprises.9.7.46
+SNMPv2-MIB::sysORID.42 = OID: SNMPv2-SMI::enterprises.9.7.203
+SNMPv2-MIB::sysORID.43 = OID: SNMPv2-SMI::enterprises.9.7.201
+SNMPv2-MIB::sysORID.44 = OID: SNMPv2-SMI::enterprises.9.7.1
+SNMPv2-MIB::sysORID.45 = OID: SNMPv2-SMI::enterprises.9.7.202
+SNMPv2-MIB::sysORID.46 = OID: SNMPv2-SMI::enterprises.9.7.440
+SNMPv2-MIB::sysORID.47 = OID: SNMPv2-SMI::enterprises.9.7.463
+SNMPv2-MIB::sysORID.48 = OID: SNMPv2-SMI::enterprises.9.7.16
+SNMPv2-MIB::sysORID.49 = OID: SNMPv2-SMI::enterprises.9.7.17
+SNMPv2-MIB::sysORID.50 = OID: SNMPv2-SMI::enterprises.9.7.99999
+SNMPv2-MIB::sysORID.51 = OID: SNMPv2-SMI::enterprises.9.7.287
+SNMPv2-MIB::sysORID.52 = OID: SNMPv2-SMI::enterprises.9.7.288
+SNMPv2-MIB::sysORID.53 = OID: SNMPv2-SMI::enterprises.9.7.36
+SNMPv2-MIB::sysORID.54 = OID: SNMPv2-SMI::enterprises.9.7.447
+SNMPv2-MIB::sysORID.55 = OID: SNMPv2-SMI::enterprises.9.7.256
+SNMPv2-MIB::sysORID.56 = OID: SNMPv2-SMI::enterprises.9.7.101
+SNMPv2-MIB::sysORID.57 = OID: SNMPv2-SMI::enterprises.9.7.105
+SNMPv2-MIB::sysORID.58 = OID: SNMPv2-SMI::enterprises.9.7.108
+SNMPv2-MIB::sysORID.59 = OID: SNMPv2-SMI::enterprises.9.7.117
+SNMPv2-MIB::sysORID.60 = OID: SNMPv2-SMI::enterprises.9.7.103
+SNMPv2-MIB::sysORID.61 = OID: SNMPv2-SMI::enterprises.9.7.107
+SNMPv2-MIB::sysORID.62 = OID: SNMPv2-SMI::enterprises.9.7.109
+SNMPv2-MIB::sysORID.63 = OID: SNMPv2-SMI::enterprises.9.7.110
+SNMPv2-MIB::sysORID.64 = OID: SNMPv2-SMI::enterprises.9.7.111
+SNMPv2-MIB::sysORID.65 = OID: SNMPv2-SMI::enterprises.9.7.102
+SNMPv2-MIB::sysORID.66 = OID: SNMPv2-SMI::enterprises.9.7.102
+SNMPv2-MIB::sysORID.67 = OID: SNMPv2-SMI::enterprises.9.7.120
+SNMPv2-MIB::sysORID.68 = OID: SNMPv2-SMI::enterprises.9.7.115
+SNMPv2-MIB::sysORID.69 = OID: SNMPv2-SMI::enterprises.9.7.172
+SNMPv2-MIB::sysORID.70 = OID: SNMPv2-SMI::enterprises.9.7.28
+SNMPv2-MIB::sysORID.71 = OID: SNMPv2-SMI::enterprises.9.7.117
+SNMPv2-MIB::sysORID.72 = OID: SNMPv2-SMI::enterprises.9.7.39
+SNMPv2-MIB::sysORID.73 = OID: SNMPv2-SMI::enterprises.9.7.113
+SNMPv2-MIB::sysORID.74 = OID: SNMPv2-SMI::enterprises.9.7.114
+SNMPv2-MIB::sysORID.75 = OID: SNMPv2-SMI::enterprises.9.7.104
+SNMPv2-MIB::sysORID.76 = OID: SNMPv2-SMI::enterprises.9.7.26
+SNMPv2-MIB::sysORID.77 = OID: SNMPv2-SMI::enterprises.9.7.51
+SNMPv2-MIB::sysORID.78 = OID: SNMPv2-SMI::enterprises.9.7.118
+SNMPv2-MIB::sysORID.79 = OID: SNMPv2-SMI::enterprises.9.7.82
+SNMPv2-MIB::sysORID.80 = OID: SNMPv2-SMI::enterprises.9.7.83
+SNMPv2-MIB::sysORID.81 = OID: SNMPv2-SMI::enterprises.9.7.84
+SNMPv2-MIB::sysORID.82 = OID: SNMPv2-SMI::enterprises.9.7.408
+SNMPv2-MIB::sysORID.83 = OID: SNMPv2-SMI::enterprises.9.7.409
+SNMPv2-MIB::sysORID.84 = OID: SNMPv2-SMI::enterprises.9.7.303
+SNMPv2-MIB::sysORID.85 = OID: SNMPv2-SMI::enterprises.9.7.213
+SNMPv2-MIB::sysORID.86 = OID: SNMPv2-SMI::enterprises.9.7.1
+SNMPv2-MIB::sysORID.87 = OID: SNMPv2-SMI::enterprises.9.7.2
+SNMPv2-MIB::sysORID.88 = OID: SNMPv2-SMI::enterprises.9.7.3
+SNMPv2-MIB::sysORID.89 = OID: SNMPv2-SMI::enterprises.9.7.4
+SNMPv2-MIB::sysORID.90 = OID: SNMPv2-SMI::enterprises.9.7.5
+SNMPv2-MIB::sysORID.91 = OID: SNMPv2-SMI::enterprises.9.7.6
+SNMPv2-MIB::sysORID.92 = OID: SNMPv2-SMI::enterprises.9.7.7
+SNMPv2-MIB::sysORID.93 = OID: SNMPv2-SMI::enterprises.9.7.8
+SNMPv2-MIB::sysORID.94 = OID: SNMPv2-SMI::enterprises.9.7.9
+SNMPv2-MIB::sysORID.95 = OID: SNMPv2-SMI::enterprises.9.7.10
+SNMPv2-MIB::sysORID.96 = OID: SNMPv2-SMI::enterprises.9.7.11
+SNMPv2-MIB::sysORID.97 = OID: SNMPv2-SMI::enterprises.9.7.12
+SNMPv2-MIB::sysORID.98 = OID: SNMPv2-SMI::enterprises.9.7.13
+SNMPv2-MIB::sysORDescr.1 = STRING: 
+        Agent capabilities for CISCO-AAA-SERVER-MIB
+        LAST-UPDATED 200001200000Z 
+        ciscoAAAServerCapabilityV10R00 AGENT-CAPABILITIES
+         SUPPORTS CISCO-AAA-SERVER-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.2 = STRING: 
+        Agent capabilities for CISCO-ALPS-MIB
+        LAST-UPDATED 9710270000Z 
+        ciscoAlpsCapabilityV01R01 AGENT-CAPABILITIES
+        SUPPORTS CISCO-ALPS-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.3 = STRING: 
+        The Agent Capabilities for 
+                        CISCO-ATM-PVCTRAP-EXTN-MIB.
+        LAST-UPDATED 200211060000Z 
+        ciscoATMPVCTRAPExtnCapabilityV12R00S AGENT-CAPABILITIES
+         SUPPORTS CISCO-ATM-PVCTRAP-EXTN-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.4 = STRING: 
+        Agent capabilities for BGP4-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoBgp4CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS BGP4-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.5 = STRING: 
+        Agent capabilities for the BRIDGE-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoBridgeCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS BRIDGE-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.6 = STRING: 
+        Agent capabilities for CALL-HISTORY-MIB
+        LAST-UPDATED 9611190000Z 
+        ciscoCallHistoryCapabilityV11R02 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CALL-HISTORY-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.7 = STRING: 
+        Agent capabilities for CISCO-CAS-IF-MIB
+        LAST-UPDATED 9709150000Z 
+        ciscoCasIfCapabilityV11R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CAS-IF-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.8 = STRING: 
+        Agent capabilities for the CASA-FA-MIB
+        LAST-UPDATED 200012010000Z 
+        ciscoCasaFaCapabilityV12R01 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CASA-FA-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.9 = STRING: 
+        Agent capabilities for CISCO-CDP-MIB
+        LAST-UPDATED 0506010000Z 
+        ciscoCdpCapabilityV11R01 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CDP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.10 = STRING: 
+        Agent capabilities for the CHANNEL-MIB
+        LAST-UPDATED 9712150000Z 
+        ciscoChannelCapabilityV12R00 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CHANNEL-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.11 = STRING: 
+        Agent capabilities for the CISCO-CIPCMPC-MIB
+        LAST-UPDATED 9702190000Z 
+        ciscoCipCmpcCapabilityV11R03 AGENT-CAPABILITIES
+         SUPPORTS CISCO-CIPCMPC-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.12 = STRING: 
+        Agent capabilities for the CISCO-CIPCSNA-MIB
+        LAST-UPDATED 9504160000Z 
+        ciscoCipCsnaCapabilityV11R00 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CIPCSNA-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.13 = STRING: 
+        Agent capabilities for the CISCO-CIPLAN-MIB
+        LAST-UPDATED 9504160000Z 
+        ciscoCipLanCapabilityV11R00 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CIPLAN-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.14 = STRING: 
+        Agent capabilities for the CISCO-CIPTCPIP-MIB
+        LAST-UPDATED 200207120000Z 
+        ciscoCipTcpIpCapabilityV12R02T AGENT-CAPABILITIES
+        SUPPORTS CISCO-CIPTCPIP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.15 = STRING: 
+        Agent capabilities for the CISCO-CIPTG-MIB
+        LAST-UPDATED 9901250000Z 
+        ciscoCipTgCapabilityV12R03T AGENT-CAPABILITIES
+         SUPPORTS CISCO-CIPTG-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.16 = STRING: 
+        Agent capabilities for 
+                                         CLASS-BASED-QOS-MIB
+        LAST-UPDATED 200301240000Z 
+        ciscoCBQosMibCapabilityV123R01T AGENT-CAPABILITIES
+        SUPPORTS CISCO-CLASS-BASED-QOS-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.17 = STRING: 
+        This is the Agent Capabilities for
+                                 CISCO-CONFIG_COPY-MIB.
+        LAST-UPDATED 200403170000Z 
+        ciscoConfigCopyCapabilityV2R0175 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CONFIG-COPY-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.18 = STRING: 
+        Agent capabilities for CISCO-DATA-COLLECTION-MIB
+       LAST-UPDATED 200501050000Z 
+        cDataCollectionCapabilityV12R0S AGENT-CAPABILITIES
+        SUPPORTS CISCO-DATA-COLLECTION-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.19 = STRING: 
+        Agent capabilities for CISCO-DIST-DIRECTOR-MIB
+        LAST-UPDATED 200204230000Z 
+        ciscoDistDirCapabilityV12R02 AGENT-CAPABILITIES
+         SUPPORTS CISCO-DIST-DIRECTOR-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.20 = STRING: 
+        Agent capabilities for CISCO-DSP-MGMT-MIB        
+                REVISION 
+        LAST-UPDATED 200506290000Z 
+        ciscoDspMgmtCapabilityV12R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-DSP-MGMT-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.21 = STRING: 
+        Agent capabilities for the DSPU-MIB
+        LAST-UPDATED 9501250000Z 
+        ciscoDspuCapabilityV11R01 AGENT-CAPABILITIES
+        SUPPORTS CISCO-DSPU-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.22 = STRING: 
+        Agent capabilities for
+                                 CISCO-ENHANCED-MEMPOOL-MIB
+        LAST-UPDATED 200501270000Z 
+        cempCapabilityV12R03T AGENT-CAPABILITIES
+        SUPPORTS CISCO-ENHANCED-MEMPOOL-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.23 = STRING: 
+        The Agent Capabilities for
+                        CISCO-ENTITY-FRU-CONTROL-MIB.
+        LAST-UPDATED 200503090000Z 
+        ciscoEntityFruControlCapabilityV2R00 AGENT-CAPABILITIES
+         SUPPORTS CISCO-ENTITY-FRU-CONTROL-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.24 = STRING: 
+        Agent capabilities for CISCO-ENVMON-MIB
+        LAST-UPDATED 9501230000Z 
+        ciscoEnvMonCapabilityV11R02 AGENT-CAPABILITIES
+        SUPPORTS CISCO-ENVMON-MIB 
+        File name: ios        
+SNMPv2-MIB::sysORDescr.25 = STRING: 
+        Agent capabilities for CISCO-ERM-MIB        
+            REVISION 
+        LAST-UPDATED 200603090000Z 
+        ciscoErmCapabilityV12R02SR AGENT-CAPABILITIES
+        SUPPORTS CISCO-ERM-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.26 = STRING: 
+        Agent capabilities for ETHERLIKE-MIB (RFC 2665).
+        LAST-UPDATED 0001211400Z 
+        ciscoEtherlikeCapabilityV12R01 AGENT-CAPABILITIES
+        SUPPORTS ETHERLIKE-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.27 = STRING: 
+        Agent capabilities for RFC 1512 FDDI MIB.
+        LAST-UPDATED 9411080000Z 
+        fddiCapabilityV10R03 AGENT-CAPABILITIES
+        SUPPORTS FDDI-SMT73-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.28 = STRING: 
+        Agent capabilities for the FRAS Host MIB
+        LAST-UPDATED 9702120000Z 
+        ciscoFrasHostCapabilityV11R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-FRAS-HOST-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.29 = STRING: 
+        Agent capabilities for CISCO-GATEKEEPER-MIB
+        LAST-UPDATED 200004170000Z 
+        ciscoGatekeeperCapabilityV12R01 AGENT-CAPABILITIES
+        SUPPORTS CISCO-GATEKEEPER-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.30 = STRING: 
+        Agent capabilities for CISCO-GPRS-GTP-MIB
+        LAST-UPDATED 200112201600Z 
+        cgprsGtpCapabilityV12R02 AGENT-CAPABILITIES
+         SUPPORTS CISCO-GPRS-GTP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.31 = STRING: 
+        Agent capabilities for CISCO-HSRP-MIB
+        LAST-UPDATED 9808250000Z 
+        ciscoHsrpCapabilityV12R0 AGENT-CAPABILITIES
+        SUPPORTS CISCO-HSRP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.32 = STRING: 
+        Agent capabilities for CISCO-HSRP-EXT-MIB
+        LAST-UPDATED 9808250000Z 
+        ciscoHsrpExtCapabilityV12R0 AGENT-CAPABILITIES
+        SUPPORTS CISCO-HSRP-EXT-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.33 = STRING: 
+        Integrated CSU/DSU MIB module.  For T1 and Switched 56 kbps
+                                interfaces.
+        LAST-UPDATED 9601210000Z 
+        ciscoICsuDsuCapabilityV11R01 AGENT-CAPABILITIES
+        SUPPORTS CISCO-ICSUDSU-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.34 = STRING: 
+        Agent capabilities for DIAL-CONTROL-MIB
+        LAST-UPDATED 9709170000Z 
+        ciscoIetfDialControlCapabilityV11R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-IETF-DIAL-CONTROL-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.35 = STRING: 
+        Agent capabilities for DLSW-MIB
+        LAST-UPDATED 9702280000Z 
+        ciscoIetfDlswCapabilityV11R00 AGENT-CAPABILITIES
+        SUPPORTS DLSW-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.36 = STRING: 
+        Agent capabilities for ISDN-MIB (IETF RFC2127)
+        LAST-UPDATED 9806210000Z 
+        ciscoIetfIsdnCapabilityV11R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-IETF-ISDN-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.37 = STRING: 
+        Agent capabilities for NAT-MIB
+        LAST-UPDATED 200109100000Z 
+        ciscoIetfNatCapabilityV12R02T AGENT-CAPABILITIES
+        SUPPORTS CISCO-IETF-NAT-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.38 = STRING: 
+        Agent capabilities for TCP-MIB
+        LAST-UPDATED 9611270000Z 
+        ciscoIetfTcpCapabilityV11R02 AGENT-CAPABILITIES
+        SUPPORTS TCP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.39 = STRING: 
+        Modification of linkDown trap objects
+                         and ifLastChange object
+        LAST-UPDATED 200301210000Z 
+        ciscoIfCapabilityFrsm12V3R00 AGENT-CAPABILITIES
+        SUPPORTS IF-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.40 = STRING: 
+        Agent capabilities for CISCO-IMAGE-MIB
+        LAST-UPDATED 9501250000Z 
+        ciscoImageMIBCapabilityV10R01 AGENT-CAPABILITIES
+        SUPPORTS CISCO-IMAGE-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.41 = STRING: 
+        Agent capabilities for CISCO-ISDN-MIB
+        LAST-UPDATED 9503100000Z 
+        ciscoIsdnCapabilityV10R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-ISDN-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.42 = STRING: 
+        Agent capabilities for MIP-MIB 
+                                (MobileIP MIB).
+        LAST-UPDATED 200312240000Z 
+        ciscoMIPCapabilityV12R0304T AGENT-CAPABILITIES
+        SUPPORTS MIP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.43 = STRING: 
+        Agent capabilities for CISCO-MMAIL-DIAL-CONTROL-MIB
+        LAST-UPDATED 9806010000Z 
+        ciscoMediaMailControlCapabilityV12R00 AGENT-CAPABILITIES
+        SUPPORTS CISCO-MMAIL-DIAL-CONTROL-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.44 = STRING: 
+        200607310000Z            DESCRIPTION
+                    
+        LAST-UPDATED 200607310000Z 
+        ciscoModemMgmtCapV12R4TISR AGENT-CAPABILITIES
+         SUPPORTS CISCO-MODEM-MGMT-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.45 = STRING: 
+        Agent capabilities for MSDP-MIB
+        LAST-UPDATED 200008220000Z 
+        ciscoMsdpCapabilityV12R01T AGENT-CAPABILITIES
+        SUPPORTS DRAFT-MSDP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.46 = STRING: 
+        The capabilities description of CISCO-NAC-NAD-MIB.        
+                REVISION        
+        LAST-UPDATED 200612120000Z 
+        ciscoNacNadCapIOSV12R04012T AGENT-CAPABILITIES
+         SUPPORTS CISCO-NAC-NAD-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.47 = STRING: 
+        Agent capabilities for NOTIFICATION-LOG-MIB
+        LAST-UPDATED 200511180000Z 
+        cNotificationLogCapabilityV12R04 AGENT-CAPABILITIES
+         SUPPORTS NOTIFICATION-LOG-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.48 = STRING: 
+        Agent capabilities for NOVELL-IPX-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoNovellIpxCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS NOVELL-IPX-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.49 = STRING: 
+        Agent capabilities for NOVELL-RIPSAP-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoNovellRipSapCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS NOVELL-RIPSAP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.50 = STRING: 
+        The Agent Capabilities for CISCO-NTP-MIB.        
+            REVISION 
+        LAST-UPDATED 200604050000Z 
+        ciscoNtpCapabilitySANOSV3R0001 AGENT-CAPABILITIES
+         SUPPORTS CISCO-NTP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.51 = STRING: 
+        Agent capabilities for the OSPF MIB.
+        LAST-UPDATED 200211260000Z 
+        ciscoOspfCapabilityV12R025S AGENT-CAPABILITIES
+        SUPPORTS OSPF-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.52 = STRING: 
+        Agent capabilities for the OSPF TRAP MIB.
+        LAST-UPDATED 200211240000Z 
+        ciscoOspfTrapCapabilityV12R026S AGENT-CAPABILITIES
+        SUPPORTS OSPF-TRAP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.53 = STRING: 
+        Agent capabilities for CISCO-PING-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoPingCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS CISCO-PING-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.54 = STRING: 
+        Agent capabilities for CISCO-POP-MGMT-MIB.
+        LAST-UPDATED 200510120000Z 
+        ciscoPopMgmtCapabilityV12R04 AGENT-CAPABILITIES
+        SUPPORTS CISCO-POP-MGMT-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.55 = STRING: 
+        Agent capabilities for CISCO-PROCESS-MIB
+        LAST-UPDATED 200411050000Z 
+        ciscoProcessCapabilityV12R03T AGENT-CAPABILITIES
+        SUPPORTS CISCO-PROCESS-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.56 = STRING: 
+        Agent capabilities for the RFC1213-MIB (MIB-II)
+        LAST-UPDATED 200109081600Z 
+        ciscoRFC1213CapabilityV12R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1213-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.57 = STRING: 
+        Agent capabilities for RFC1231-MIB (Token Ring MIB)
+        LAST-UPDATED 9408180000Z 
+        ciscoRFC1231CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1231-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.58 = STRING: 
+        Agent capabilities for RFC1243-MIB (Appletalk MIB)
+        LAST-UPDATED 9408180000Z 
+        ciscoRFC1243CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1243-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.59 = STRING: 
+        Agent capabilities for the OSPF MIB.
+        LAST-UPDATED 9411220000Z 
+        ospfCapabilityV10R01 AGENT-CAPABILITIES
+        SUPPORTS RFC1253-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.60 = STRING: 
+        Agent capabilities for RFC1285-MIB (FDDI MIB)
+        LAST-UPDATED 9408180000Z 
+        ciscoRFC1285CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1285-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.61 = STRING: 
+        Agent capabilities for RFC1315-MIB (Frame Relay MIB)
+        LAST-UPDATED 9408180000Z 
+        ciscoRFC1315CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1315-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.62 = STRING: 
+        Agent capabilities for RFC1381-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoRFC1381CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1381-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.63 = STRING: 
+        Agent capabilities for RFC1382-MIB (X.25 MIB)
+        LAST-UPDATED 9408180000Z 
+        ciscoRFC1382CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1382-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.64 = STRING: 
+        Agent capabilities for RFC1398-MIB (Ethernet MIB).
+        LAST-UPDATED 9408180000Z 
+        ciscoRFC1398CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1398-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.65 = STRING: 
+        Agent capabilities for RFC1406-MIB (DS1 MIB)
+        LAST-UPDATED 200307080000Z 
+        ciscoRFC1406CapabilityV122R12T AGENT-CAPABILITIES
+        SUPPORTS RFC1406-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.66 = STRING: 
+        Agent capabilities for RFC1407-MIB (DS3 MIB)
+        LAST-UPDATED 200108170000Z 
+        ciscoRFC1407CapabilityV122R12 AGENT-CAPABILITIES
+        SUPPORTS RFC1407-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.67 = STRING: 
+        Agent capabilities for RFC1595-MIB (SONET MIB)
+        LAST-UPDATED 9607290000Z 
+        ciscoRFC1595CapabilityV11R01 AGENT-CAPABILITIES
+        SUPPORTS RFC1595-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.68 = STRING: 
+        Agent capabilities for RS-232-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoRS232CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RS-232-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.69 = STRING: 
+        Agent capabilities for the CISCO-SIP-UA-MIB.
+        LAST-UPDATED 200506220000Z 
+        ciscoSipUaCapabilityV12R0402T AGENT-CAPABILITIES
+        SUPPORTS CISCO-SIP-UA-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.70 = STRING: 
+        Agent capabilities for the CISCO-SNA-LLC-MIB
+        LAST-UPDATED 9505100000Z 
+        ciscoSnaLlcCapabilityV11R00 AGENT-CAPABILITIES
+        SUPPORTS CISCO-SNA-LLC-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.71 = STRING: 
+        Agent capabilities for the SNA-SDLC-MIB
+        LAST-UPDATED 9501230000Z 
+        ciscoSnaSdlcCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS SNA-SDLC-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.72 = STRING: 
+        Agent capabilities for CISCO-SNAPSHOT-MIB
+        LAST-UPDATED 9501230000Z 
+        ciscoSnapshotCapabilityV10R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-SNAPSHOT-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.73 = STRING: 
+        Agent capabilities for SNMPv2-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoSnmpV2CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS SNMPv2-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.74 = STRING: 
+        Agent capabilities for SNMPv2-PARTY-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoSnmpV2PartyCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS SNMPv2-PARTY-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.75 = STRING: 
+        Agent capabilities for SOURCE-ROUTING-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoSourceRoutingCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS SOURCE-ROUTING-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.76 = STRING: 
+        Agent capabilities for CISCO-TCP-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoTcpCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS CISCO-TCP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.77 = STRING: 
+        Agent capabilities for the CISCO-TCPOFFLOAD-MIB
+        LAST-UPDATED 9706230000Z 
+        ciscoTcpOffloadCapabilityV11R02 AGENT-CAPABILITIES
+        SUPPORTS CISCO-TCPOFFLOAD-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.78 = STRING: 
+        Agent capabilities for UDP-MIB
+        LAST-UPDATED 9611270000Z 
+        ciscoUdpCapabilityV11R02 AGENT-CAPABILITIES
+        SUPPORTS UDP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.79 = STRING: 
+        Agent capabilities for CISCO-VOICE-ANALOG-IF-MIB        
+                REVISION    
+        LAST-UPDATED 200304280000Z 
+        ciscoVoiceAnalogIfCapabilityV11R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-VOICE-ANALOG-IF-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.80 = STRING: 
+        Agent capabilities for CISCO-VOICE-DIAL-CONTROL-MIB.
+        LAST-UPDATED 200611160000Z 
+        ciscoVoiceDialControlCapV12R04 AGENT-CAPABILITIES
+         SUPPORTS CISCO-VOICE-DIAL-CONTROL-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.81 = STRING: 
+        Agent capabilities for CISCO-VOICE-IF-MIB
+        LAST-UPDATED 9706150000Z 
+        ciscoVoiceIfCapabilityV11R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-VOICE-IF-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.82 = STRING: 
+        
+        LAST-UPDATED 200603010000Z 
+        ciscoXgcpCapabilityV5R300 AGENT-CAPABILITIES
+         SUPPORTS CISCO-XGCP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.83 = STRING: 
+        The capabilities description of
+                         CISCO-XGCP-EXT-MIB.
+        LAST-UPDATED 200406180000Z 
+        ciscoXgcpExtCapabilityV12R03 AGENT-CAPABILITIES
+         SUPPORTS CISCO-XGCP-EXT-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.84 = STRING: 
+        Agent capabilities for MPLS-LSR-MIB                        LAST-UPDATED    
+        LAST-UPDATED 200109011200Z 
+        mplsLsrMibCapabilityV12R0 AGENT-CAPABILITIES
+        SUPPORTS MPLS-LSR-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.85 = STRING: 
+        Agent capabilities for MPLS-TE-MIB        
+           -- Revision history.
+        
+           REVISION
+                  
+        LAST-UPDATED
+        mplsTeCapabilityV10R00 AGENT-CAPABILITIES
+        SUPPORTS MPLS-TE-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.86 = STRING: 
+        Agent capabilities for OLD-CISCO-APPLETALK-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoAppletalkCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-APPLETALK-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.87 = STRING: 
+        Agent capabilities for OLD-CISCO-CHASSIS-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoChassisCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-CHASSIS-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.88 = STRING: 
+        Agent capabilities for OLD-CISCO-CPU-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoCpuCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-CPU-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.89 = STRING: 
+        Agent capabilities for OLD-CISCO-DECNET-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoDECnetCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-DECNET-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.90 = STRING: 
+        Agent capabilities for OLD-CISCO-ENV-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoEnvCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-ENV-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.91 = STRING: 
+        Agent capabilities for OLD-CISCO-FLASH-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoFlashCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-FLASH-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.92 = STRING: 
+        Agent capabilities for OLD-CISCO-INTERFACES-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoIfCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-INTERFACES-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.93 = STRING: 
+        Agent capabilities for OLD-CISCO-IP-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoIpCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-IP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.94 = STRING: 
+        Agent capabilities for OLD-CISCO-MEMORY-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoMemoryCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-MEMORY-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.95 = STRING: 
+        Agent capabilities for OLD-CISCO-NOVELL-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoNovellCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-NOVELL-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.96 = STRING: 
+        Agent capabilities for OLD-CISCO-SYSTEM-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoSystemCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-SYSTEM-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.97 = STRING: 
+        Agent capabilities for OLD-CISCO-TCP-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoTcpCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-TCP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.98 = STRING: 
+        Agent capabilities for OLD-CISCO-TS-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoTsCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-TS-MIB
+        File name: ios        
+SNMPv2-MIB::sysORUpTime.1 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.2 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.3 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.4 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.5 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.6 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.7 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.8 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.9 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.10 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.11 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.12 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.13 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.14 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.15 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.16 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.17 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.18 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.19 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.20 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.21 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.22 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.23 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.24 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.25 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.26 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.27 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.28 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.29 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.30 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.31 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.32 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.33 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.34 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.35 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.36 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.37 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.38 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.39 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.40 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.41 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.42 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.43 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.44 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.45 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.46 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.47 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.48 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.49 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.50 = Timeticks: (0) 0:00:00.00
+^C
+[root@Labs5610 ar]# 
+[root@Labs5610 ar]# snmpwalk -v 2c -c Leitura 172.16.1.1 iso.org.dod.internet.mgmt.mib-2.system
+SNMPv2-MIB::sysDescr.0 = STRING: Cisco IOS Software, 2600 Software (C2691-ADVIPSERVICESK9-M), Version 12.4(15)T6, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Mon 07-Jul-08 04:30 by prod_rel_team
+SNMPv2-MIB::sysObjectID.0 = OID: SNMPv2-SMI::enterprises.9.1.122
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (644418) 1:47:24.18
+SNMPv2-MIB::sysContact.0 = STRING: 
+SNMPv2-MIB::sysName.0 = STRING: R2
+SNMPv2-MIB::sysLocation.0 = STRING: 
+SNMPv2-MIB::sysServices.0 = INTEGER: 78
+SNMPv2-MIB::sysORLastChange.0 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORID.1 = OID: SNMPv2-SMI::enterprises.9.7.129
+SNMPv2-MIB::sysORID.2 = OID: SNMPv2-SMI::enterprises.9.7.115
+SNMPv2-MIB::sysORID.3 = OID: SNMPv2-SMI::enterprises.9.7.265
+SNMPv2-MIB::sysORID.4 = OID: SNMPv2-SMI::enterprises.9.7.112
+SNMPv2-MIB::sysORID.5 = OID: SNMPv2-SMI::enterprises.9.7.106
+SNMPv2-MIB::sysORID.6 = OID: SNMPv2-SMI::enterprises.9.7.47
+SNMPv2-MIB::sysORID.7 = OID: SNMPv2-SMI::enterprises.9.7.122
+SNMPv2-MIB::sysORID.8 = OID: SNMPv2-SMI::enterprises.9.7.135
+SNMPv2-MIB::sysORID.9 = OID: SNMPv2-SMI::enterprises.9.7.43
+SNMPv2-MIB::sysORID.10 = OID: SNMPv2-SMI::enterprises.9.7.37
+SNMPv2-MIB::sysORID.11 = OID: SNMPv2-SMI::enterprises.9.7.92
+SNMPv2-MIB::sysORID.12 = OID: SNMPv2-SMI::enterprises.9.7.53
+SNMPv2-MIB::sysORID.13 = OID: SNMPv2-SMI::enterprises.9.7.54
+SNMPv2-MIB::sysORID.14 = OID: SNMPv2-SMI::enterprises.9.7.52
+SNMPv2-MIB::sysORID.15 = OID: SNMPv2-SMI::enterprises.9.7.93
+SNMPv2-MIB::sysORID.16 = OID: SNMPv2-SMI::enterprises.9.7.186
+SNMPv2-MIB::sysORID.17 = OID: SNMPv2-SMI::enterprises.9.7.128
+SNMPv2-MIB::sysORID.18 = OID: SNMPv2-SMI::enterprises.9.7.425
+SNMPv2-MIB::sysORID.19 = OID: SNMPv2-SMI::enterprises.9.7.267
+SNMPv2-MIB::sysORID.20 = OID: SNMPv2-SMI::enterprises.9.7.121
+SNMPv2-MIB::sysORID.21 = OID: SNMPv2-SMI::enterprises.9.7.44
+SNMPv2-MIB::sysORID.22 = OID: SNMPv2-SMI::enterprises.9.7.202
+SNMPv2-MIB::sysORID.23 = OID: SNMPv2-SMI::enterprises.9.7.264
+SNMPv2-MIB::sysORID.24 = OID: SNMPv2-SMI::enterprises.9.7.33
+SNMPv2-MIB::sysORID.25 = OID: SNMPv2-SMI::enterprises.9.7.492
+SNMPv2-MIB::sysORID.26 = OID: SNMPv2-SMI::enterprises.9.7.130
+SNMPv2-MIB::sysORID.27 = OID: SNMPv2-SMI::enterprises.9.7.116
+SNMPv2-MIB::sysORID.28 = OID: SNMPv2-SMI::enterprises.9.7.91
+SNMPv2-MIB::sysORID.29 = OID: SNMPv2-SMI::enterprises.9.7.999
+SNMPv2-MIB::sysORID.30 = OID: SNMPv2-SMI::enterprises.9.7.212
+SNMPv2-MIB::sysORID.31 = OID: SNMPv2-SMI::enterprises.9.7.126
+SNMPv2-MIB::sysORID.32 = OID: SNMPv2-SMI::enterprises.9.7.127
+SNMPv2-MIB::sysORID.33 = OID: SNMPv2-SMI::enterprises.9.7.64
+SNMPv2-MIB::sysORID.34 = OID: SNMPv2-SMI::enterprises.9.7.123
+SNMPv2-MIB::sysORID.35 = OID: SNMPv2-SMI::enterprises.9.7.120
+SNMPv2-MIB::sysORID.36 = OID: SNMPv2-SMI::enterprises.9.7.124
+SNMPv2-MIB::sysORID.37 = OID: SNMPv2-SMI::enterprises.9.7.218
+SNMPv2-MIB::sysORID.38 = OID: SNMPv2-SMI::enterprises.9.7.119
+SNMPv2-MIB::sysORID.39 = OID: SNMPv2-SMI::enterprises.9.7.125
+SNMPv2-MIB::sysORID.40 = OID: SNMPv2-SMI::enterprises.9.7.45
+SNMPv2-MIB::sysORID.41 = OID: SNMPv2-SMI::enterprises.9.7.46
+SNMPv2-MIB::sysORID.42 = OID: SNMPv2-SMI::enterprises.9.7.203
+SNMPv2-MIB::sysORID.43 = OID: SNMPv2-SMI::enterprises.9.7.201
+SNMPv2-MIB::sysORID.44 = OID: SNMPv2-SMI::enterprises.9.7.1
+SNMPv2-MIB::sysORID.45 = OID: SNMPv2-SMI::enterprises.9.7.202
+SNMPv2-MIB::sysORID.46 = OID: SNMPv2-SMI::enterprises.9.7.440
+SNMPv2-MIB::sysORID.47 = OID: SNMPv2-SMI::enterprises.9.7.463
+SNMPv2-MIB::sysORID.48 = OID: SNMPv2-SMI::enterprises.9.7.16
+SNMPv2-MIB::sysORID.49 = OID: SNMPv2-SMI::enterprises.9.7.17
+SNMPv2-MIB::sysORID.50 = OID: SNMPv2-SMI::enterprises.9.7.99999
+SNMPv2-MIB::sysORID.51 = OID: SNMPv2-SMI::enterprises.9.7.287
+SNMPv2-MIB::sysORID.52 = OID: SNMPv2-SMI::enterprises.9.7.288
+SNMPv2-MIB::sysORID.53 = OID: SNMPv2-SMI::enterprises.9.7.36
+SNMPv2-MIB::sysORID.54 = OID: SNMPv2-SMI::enterprises.9.7.447
+SNMPv2-MIB::sysORID.55 = OID: SNMPv2-SMI::enterprises.9.7.256
+SNMPv2-MIB::sysORID.56 = OID: SNMPv2-SMI::enterprises.9.7.101
+SNMPv2-MIB::sysORID.57 = OID: SNMPv2-SMI::enterprises.9.7.105
+SNMPv2-MIB::sysORID.58 = OID: SNMPv2-SMI::enterprises.9.7.108
+SNMPv2-MIB::sysORID.59 = OID: SNMPv2-SMI::enterprises.9.7.117
+SNMPv2-MIB::sysORID.60 = OID: SNMPv2-SMI::enterprises.9.7.103
+SNMPv2-MIB::sysORID.61 = OID: SNMPv2-SMI::enterprises.9.7.107
+SNMPv2-MIB::sysORID.62 = OID: SNMPv2-SMI::enterprises.9.7.109
+SNMPv2-MIB::sysORID.63 = OID: SNMPv2-SMI::enterprises.9.7.110
+SNMPv2-MIB::sysORID.64 = OID: SNMPv2-SMI::enterprises.9.7.111
+SNMPv2-MIB::sysORID.65 = OID: SNMPv2-SMI::enterprises.9.7.102
+SNMPv2-MIB::sysORID.66 = OID: SNMPv2-SMI::enterprises.9.7.102
+SNMPv2-MIB::sysORID.67 = OID: SNMPv2-SMI::enterprises.9.7.120
+SNMPv2-MIB::sysORID.68 = OID: SNMPv2-SMI::enterprises.9.7.115
+SNMPv2-MIB::sysORID.69 = OID: SNMPv2-SMI::enterprises.9.7.172
+SNMPv2-MIB::sysORID.70 = OID: SNMPv2-SMI::enterprises.9.7.28
+SNMPv2-MIB::sysORID.71 = OID: SNMPv2-SMI::enterprises.9.7.117
+SNMPv2-MIB::sysORID.72 = OID: SNMPv2-SMI::enterprises.9.7.39
+SNMPv2-MIB::sysORID.73 = OID: SNMPv2-SMI::enterprises.9.7.113
+SNMPv2-MIB::sysORID.74 = OID: SNMPv2-SMI::enterprises.9.7.114
+SNMPv2-MIB::sysORID.75 = OID: SNMPv2-SMI::enterprises.9.7.104
+SNMPv2-MIB::sysORID.76 = OID: SNMPv2-SMI::enterprises.9.7.26
+SNMPv2-MIB::sysORID.77 = OID: SNMPv2-SMI::enterprises.9.7.51
+SNMPv2-MIB::sysORID.78 = OID: SNMPv2-SMI::enterprises.9.7.118
+SNMPv2-MIB::sysORID.79 = OID: SNMPv2-SMI::enterprises.9.7.82
+SNMPv2-MIB::sysORID.80 = OID: SNMPv2-SMI::enterprises.9.7.83
+SNMPv2-MIB::sysORID.81 = OID: SNMPv2-SMI::enterprises.9.7.84
+SNMPv2-MIB::sysORID.82 = OID: SNMPv2-SMI::enterprises.9.7.408
+SNMPv2-MIB::sysORID.83 = OID: SNMPv2-SMI::enterprises.9.7.409
+SNMPv2-MIB::sysORID.84 = OID: SNMPv2-SMI::enterprises.9.7.303
+SNMPv2-MIB::sysORID.85 = OID: SNMPv2-SMI::enterprises.9.7.213
+SNMPv2-MIB::sysORID.86 = OID: SNMPv2-SMI::enterprises.9.7.1
+SNMPv2-MIB::sysORID.87 = OID: SNMPv2-SMI::enterprises.9.7.2
+SNMPv2-MIB::sysORID.88 = OID: SNMPv2-SMI::enterprises.9.7.3
+SNMPv2-MIB::sysORID.89 = OID: SNMPv2-SMI::enterprises.9.7.4
+SNMPv2-MIB::sysORID.90 = OID: SNMPv2-SMI::enterprises.9.7.5
+SNMPv2-MIB::sysORID.91 = OID: SNMPv2-SMI::enterprises.9.7.6
+SNMPv2-MIB::sysORID.92 = OID: SNMPv2-SMI::enterprises.9.7.7
+SNMPv2-MIB::sysORID.93 = OID: SNMPv2-SMI::enterprises.9.7.8
+SNMPv2-MIB::sysORID.94 = OID: SNMPv2-SMI::enterprises.9.7.9
+SNMPv2-MIB::sysORID.95 = OID: SNMPv2-SMI::enterprises.9.7.10
+SNMPv2-MIB::sysORID.96 = OID: SNMPv2-SMI::enterprises.9.7.11
+SNMPv2-MIB::sysORID.97 = OID: SNMPv2-SMI::enterprises.9.7.12
+SNMPv2-MIB::sysORID.98 = OID: SNMPv2-SMI::enterprises.9.7.13
+SNMPv2-MIB::sysORDescr.1 = STRING: 
+        Agent capabilities for CISCO-AAA-SERVER-MIB
+        LAST-UPDATED 200001200000Z 
+        ciscoAAAServerCapabilityV10R00 AGENT-CAPABILITIES
+         SUPPORTS CISCO-AAA-SERVER-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.2 = STRING: 
+        Agent capabilities for CISCO-ALPS-MIB
+        LAST-UPDATED 9710270000Z 
+        ciscoAlpsCapabilityV01R01 AGENT-CAPABILITIES
+        SUPPORTS CISCO-ALPS-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.3 = STRING: 
+        The Agent Capabilities for 
+                        CISCO-ATM-PVCTRAP-EXTN-MIB.
+        LAST-UPDATED 200211060000Z 
+        ciscoATMPVCTRAPExtnCapabilityV12R00S AGENT-CAPABILITIES
+         SUPPORTS CISCO-ATM-PVCTRAP-EXTN-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.4 = STRING: 
+        Agent capabilities for BGP4-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoBgp4CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS BGP4-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.5 = STRING: 
+        Agent capabilities for the BRIDGE-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoBridgeCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS BRIDGE-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.6 = STRING: 
+        Agent capabilities for CALL-HISTORY-MIB
+        LAST-UPDATED 9611190000Z 
+        ciscoCallHistoryCapabilityV11R02 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CALL-HISTORY-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.7 = STRING: 
+        Agent capabilities for CISCO-CAS-IF-MIB
+        LAST-UPDATED 9709150000Z 
+        ciscoCasIfCapabilityV11R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CAS-IF-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.8 = STRING: 
+        Agent capabilities for the CASA-FA-MIB
+        LAST-UPDATED 200012010000Z 
+        ciscoCasaFaCapabilityV12R01 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CASA-FA-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.9 = STRING: 
+        Agent capabilities for CISCO-CDP-MIB
+        LAST-UPDATED 0506010000Z 
+        ciscoCdpCapabilityV11R01 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CDP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.10 = STRING: 
+        Agent capabilities for the CHANNEL-MIB
+        LAST-UPDATED 9712150000Z 
+        ciscoChannelCapabilityV12R00 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CHANNEL-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.11 = STRING: 
+        Agent capabilities for the CISCO-CIPCMPC-MIB
+        LAST-UPDATED 9702190000Z 
+        ciscoCipCmpcCapabilityV11R03 AGENT-CAPABILITIES
+         SUPPORTS CISCO-CIPCMPC-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.12 = STRING: 
+        Agent capabilities for the CISCO-CIPCSNA-MIB
+        LAST-UPDATED 9504160000Z 
+        ciscoCipCsnaCapabilityV11R00 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CIPCSNA-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.13 = STRING: 
+        Agent capabilities for the CISCO-CIPLAN-MIB
+        LAST-UPDATED 9504160000Z 
+        ciscoCipLanCapabilityV11R00 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CIPLAN-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.14 = STRING: 
+        Agent capabilities for the CISCO-CIPTCPIP-MIB
+        LAST-UPDATED 200207120000Z 
+        ciscoCipTcpIpCapabilityV12R02T AGENT-CAPABILITIES
+        SUPPORTS CISCO-CIPTCPIP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.15 = STRING: 
+        Agent capabilities for the CISCO-CIPTG-MIB
+        LAST-UPDATED 9901250000Z 
+        ciscoCipTgCapabilityV12R03T AGENT-CAPABILITIES
+         SUPPORTS CISCO-CIPTG-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.16 = STRING: 
+        Agent capabilities for 
+                                         CLASS-BASED-QOS-MIB
+        LAST-UPDATED 200301240000Z 
+        ciscoCBQosMibCapabilityV123R01T AGENT-CAPABILITIES
+        SUPPORTS CISCO-CLASS-BASED-QOS-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.17 = STRING: 
+        This is the Agent Capabilities for
+                                 CISCO-CONFIG_COPY-MIB.
+        LAST-UPDATED 200403170000Z 
+        ciscoConfigCopyCapabilityV2R0175 AGENT-CAPABILITIES
+        SUPPORTS CISCO-CONFIG-COPY-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.18 = STRING: 
+        Agent capabilities for CISCO-DATA-COLLECTION-MIB
+       LAST-UPDATED 200501050000Z 
+        cDataCollectionCapabilityV12R0S AGENT-CAPABILITIES
+        SUPPORTS CISCO-DATA-COLLECTION-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.19 = STRING: 
+        Agent capabilities for CISCO-DIST-DIRECTOR-MIB
+        LAST-UPDATED 200204230000Z 
+        ciscoDistDirCapabilityV12R02 AGENT-CAPABILITIES
+         SUPPORTS CISCO-DIST-DIRECTOR-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.20 = STRING: 
+        Agent capabilities for CISCO-DSP-MGMT-MIB        
+                REVISION 
+        LAST-UPDATED 200506290000Z 
+        ciscoDspMgmtCapabilityV12R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-DSP-MGMT-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.21 = STRING: 
+        Agent capabilities for the DSPU-MIB
+        LAST-UPDATED 9501250000Z 
+        ciscoDspuCapabilityV11R01 AGENT-CAPABILITIES
+        SUPPORTS CISCO-DSPU-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.22 = STRING: 
+        Agent capabilities for
+                                 CISCO-ENHANCED-MEMPOOL-MIB
+        LAST-UPDATED 200501270000Z 
+        cempCapabilityV12R03T AGENT-CAPABILITIES
+        SUPPORTS CISCO-ENHANCED-MEMPOOL-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.23 = STRING: 
+        The Agent Capabilities for
+                        CISCO-ENTITY-FRU-CONTROL-MIB.
+        LAST-UPDATED 200503090000Z 
+        ciscoEntityFruControlCapabilityV2R00 AGENT-CAPABILITIES
+         SUPPORTS CISCO-ENTITY-FRU-CONTROL-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.24 = STRING: 
+        Agent capabilities for CISCO-ENVMON-MIB
+        LAST-UPDATED 9501230000Z 
+        ciscoEnvMonCapabilityV11R02 AGENT-CAPABILITIES
+        SUPPORTS CISCO-ENVMON-MIB 
+        File name: ios        
+SNMPv2-MIB::sysORDescr.25 = STRING: 
+        Agent capabilities for CISCO-ERM-MIB        
+            REVISION 
+        LAST-UPDATED 200603090000Z 
+        ciscoErmCapabilityV12R02SR AGENT-CAPABILITIES
+        SUPPORTS CISCO-ERM-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.26 = STRING: 
+        Agent capabilities for ETHERLIKE-MIB (RFC 2665).
+        LAST-UPDATED 0001211400Z 
+        ciscoEtherlikeCapabilityV12R01 AGENT-CAPABILITIES
+        SUPPORTS ETHERLIKE-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.27 = STRING: 
+        Agent capabilities for RFC 1512 FDDI MIB.
+        LAST-UPDATED 9411080000Z 
+        fddiCapabilityV10R03 AGENT-CAPABILITIES
+        SUPPORTS FDDI-SMT73-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.28 = STRING: 
+        Agent capabilities for the FRAS Host MIB
+        LAST-UPDATED 9702120000Z 
+        ciscoFrasHostCapabilityV11R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-FRAS-HOST-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.29 = STRING: 
+        Agent capabilities for CISCO-GATEKEEPER-MIB
+        LAST-UPDATED 200004170000Z 
+        ciscoGatekeeperCapabilityV12R01 AGENT-CAPABILITIES
+        SUPPORTS CISCO-GATEKEEPER-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.30 = STRING: 
+        Agent capabilities for CISCO-GPRS-GTP-MIB
+        LAST-UPDATED 200112201600Z 
+        cgprsGtpCapabilityV12R02 AGENT-CAPABILITIES
+         SUPPORTS CISCO-GPRS-GTP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.31 = STRING: 
+        Agent capabilities for CISCO-HSRP-MIB
+        LAST-UPDATED 9808250000Z 
+        ciscoHsrpCapabilityV12R0 AGENT-CAPABILITIES
+        SUPPORTS CISCO-HSRP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.32 = STRING: 
+        Agent capabilities for CISCO-HSRP-EXT-MIB
+        LAST-UPDATED 9808250000Z 
+        ciscoHsrpExtCapabilityV12R0 AGENT-CAPABILITIES
+        SUPPORTS CISCO-HSRP-EXT-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.33 = STRING: 
+        Integrated CSU/DSU MIB module.  For T1 and Switched 56 kbps
+                                interfaces.
+        LAST-UPDATED 9601210000Z 
+        ciscoICsuDsuCapabilityV11R01 AGENT-CAPABILITIES
+        SUPPORTS CISCO-ICSUDSU-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.34 = STRING: 
+        Agent capabilities for DIAL-CONTROL-MIB
+        LAST-UPDATED 9709170000Z 
+        ciscoIetfDialControlCapabilityV11R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-IETF-DIAL-CONTROL-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.35 = STRING: 
+        Agent capabilities for DLSW-MIB
+        LAST-UPDATED 9702280000Z 
+        ciscoIetfDlswCapabilityV11R00 AGENT-CAPABILITIES
+        SUPPORTS DLSW-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.36 = STRING: 
+        Agent capabilities for ISDN-MIB (IETF RFC2127)
+        LAST-UPDATED 9806210000Z 
+        ciscoIetfIsdnCapabilityV11R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-IETF-ISDN-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.37 = STRING: 
+        Agent capabilities for NAT-MIB
+        LAST-UPDATED 200109100000Z 
+        ciscoIetfNatCapabilityV12R02T AGENT-CAPABILITIES
+        SUPPORTS CISCO-IETF-NAT-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.38 = STRING: 
+        Agent capabilities for TCP-MIB
+        LAST-UPDATED 9611270000Z 
+        ciscoIetfTcpCapabilityV11R02 AGENT-CAPABILITIES
+        SUPPORTS TCP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.39 = STRING: 
+        Modification of linkDown trap objects
+                         and ifLastChange object
+        LAST-UPDATED 200301210000Z 
+        ciscoIfCapabilityFrsm12V3R00 AGENT-CAPABILITIES
+        SUPPORTS IF-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.40 = STRING: 
+        Agent capabilities for CISCO-IMAGE-MIB
+        LAST-UPDATED 9501250000Z 
+        ciscoImageMIBCapabilityV10R01 AGENT-CAPABILITIES
+        SUPPORTS CISCO-IMAGE-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.41 = STRING: 
+        Agent capabilities for CISCO-ISDN-MIB
+        LAST-UPDATED 9503100000Z 
+        ciscoIsdnCapabilityV10R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-ISDN-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.42 = STRING: 
+        Agent capabilities for MIP-MIB 
+                                (MobileIP MIB).
+        LAST-UPDATED 200312240000Z 
+        ciscoMIPCapabilityV12R0304T AGENT-CAPABILITIES
+        SUPPORTS MIP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.43 = STRING: 
+        Agent capabilities for CISCO-MMAIL-DIAL-CONTROL-MIB
+        LAST-UPDATED 9806010000Z 
+        ciscoMediaMailControlCapabilityV12R00 AGENT-CAPABILITIES
+        SUPPORTS CISCO-MMAIL-DIAL-CONTROL-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.44 = STRING: 
+        200607310000Z            DESCRIPTION
+                    
+        LAST-UPDATED 200607310000Z 
+        ciscoModemMgmtCapV12R4TISR AGENT-CAPABILITIES
+         SUPPORTS CISCO-MODEM-MGMT-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.45 = STRING: 
+        Agent capabilities for MSDP-MIB
+        LAST-UPDATED 200008220000Z 
+        ciscoMsdpCapabilityV12R01T AGENT-CAPABILITIES
+        SUPPORTS DRAFT-MSDP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.46 = STRING: 
+        The capabilities description of CISCO-NAC-NAD-MIB.        
+                REVISION        
+        LAST-UPDATED 200612120000Z 
+        ciscoNacNadCapIOSV12R04012T AGENT-CAPABILITIES
+         SUPPORTS CISCO-NAC-NAD-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.47 = STRING: 
+        Agent capabilities for NOTIFICATION-LOG-MIB
+        LAST-UPDATED 200511180000Z 
+        cNotificationLogCapabilityV12R04 AGENT-CAPABILITIES
+         SUPPORTS NOTIFICATION-LOG-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.48 = STRING: 
+        Agent capabilities for NOVELL-IPX-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoNovellIpxCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS NOVELL-IPX-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.49 = STRING: 
+        Agent capabilities for NOVELL-RIPSAP-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoNovellRipSapCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS NOVELL-RIPSAP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.50 = STRING: 
+        The Agent Capabilities for CISCO-NTP-MIB.        
+            REVISION 
+        LAST-UPDATED 200604050000Z 
+        ciscoNtpCapabilitySANOSV3R0001 AGENT-CAPABILITIES
+         SUPPORTS CISCO-NTP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.51 = STRING: 
+        Agent capabilities for the OSPF MIB.
+        LAST-UPDATED 200211260000Z 
+        ciscoOspfCapabilityV12R025S AGENT-CAPABILITIES
+        SUPPORTS OSPF-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.52 = STRING: 
+        Agent capabilities for the OSPF TRAP MIB.
+        LAST-UPDATED 200211240000Z 
+        ciscoOspfTrapCapabilityV12R026S AGENT-CAPABILITIES
+        SUPPORTS OSPF-TRAP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.53 = STRING: 
+        Agent capabilities for CISCO-PING-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoPingCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS CISCO-PING-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.54 = STRING: 
+        Agent capabilities for CISCO-POP-MGMT-MIB.
+        LAST-UPDATED 200510120000Z 
+        ciscoPopMgmtCapabilityV12R04 AGENT-CAPABILITIES
+        SUPPORTS CISCO-POP-MGMT-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.55 = STRING: 
+        Agent capabilities for CISCO-PROCESS-MIB
+        LAST-UPDATED 200411050000Z 
+        ciscoProcessCapabilityV12R03T AGENT-CAPABILITIES
+        SUPPORTS CISCO-PROCESS-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.56 = STRING: 
+        Agent capabilities for the RFC1213-MIB (MIB-II)
+        LAST-UPDATED 200109081600Z 
+        ciscoRFC1213CapabilityV12R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1213-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.57 = STRING: 
+        Agent capabilities for RFC1231-MIB (Token Ring MIB)
+        LAST-UPDATED 9408180000Z 
+        ciscoRFC1231CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1231-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.58 = STRING: 
+        Agent capabilities for RFC1243-MIB (Appletalk MIB)
+        LAST-UPDATED 9408180000Z 
+        ciscoRFC1243CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1243-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.59 = STRING: 
+        Agent capabilities for the OSPF MIB.
+        LAST-UPDATED 9411220000Z 
+        ospfCapabilityV10R01 AGENT-CAPABILITIES
+        SUPPORTS RFC1253-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.60 = STRING: 
+        Agent capabilities for RFC1285-MIB (FDDI MIB)
+        LAST-UPDATED 9408180000Z 
+        ciscoRFC1285CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1285-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.61 = STRING: 
+        Agent capabilities for RFC1315-MIB (Frame Relay MIB)
+        LAST-UPDATED 9408180000Z 
+        ciscoRFC1315CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1315-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.62 = STRING: 
+        Agent capabilities for RFC1381-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoRFC1381CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1381-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.63 = STRING: 
+        Agent capabilities for RFC1382-MIB (X.25 MIB)
+        LAST-UPDATED 9408180000Z 
+        ciscoRFC1382CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1382-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.64 = STRING: 
+        Agent capabilities for RFC1398-MIB (Ethernet MIB).
+        LAST-UPDATED 9408180000Z 
+        ciscoRFC1398CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RFC1398-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.65 = STRING: 
+        Agent capabilities for RFC1406-MIB (DS1 MIB)
+        LAST-UPDATED 200307080000Z 
+        ciscoRFC1406CapabilityV122R12T AGENT-CAPABILITIES
+        SUPPORTS RFC1406-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.66 = STRING: 
+        Agent capabilities for RFC1407-MIB (DS3 MIB)
+        LAST-UPDATED 200108170000Z 
+        ciscoRFC1407CapabilityV122R12 AGENT-CAPABILITIES
+        SUPPORTS RFC1407-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.67 = STRING: 
+        Agent capabilities for RFC1595-MIB (SONET MIB)
+        LAST-UPDATED 9607290000Z 
+        ciscoRFC1595CapabilityV11R01 AGENT-CAPABILITIES
+        SUPPORTS RFC1595-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.68 = STRING: 
+        Agent capabilities for RS-232-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoRS232CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS RS-232-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.69 = STRING: 
+        Agent capabilities for the CISCO-SIP-UA-MIB.
+        LAST-UPDATED 200506220000Z 
+        ciscoSipUaCapabilityV12R0402T AGENT-CAPABILITIES
+        SUPPORTS CISCO-SIP-UA-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.70 = STRING: 
+        Agent capabilities for the CISCO-SNA-LLC-MIB
+        LAST-UPDATED 9505100000Z 
+        ciscoSnaLlcCapabilityV11R00 AGENT-CAPABILITIES
+        SUPPORTS CISCO-SNA-LLC-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.71 = STRING: 
+        Agent capabilities for the SNA-SDLC-MIB
+        LAST-UPDATED 9501230000Z 
+        ciscoSnaSdlcCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS SNA-SDLC-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.72 = STRING: 
+        Agent capabilities for CISCO-SNAPSHOT-MIB
+        LAST-UPDATED 9501230000Z 
+        ciscoSnapshotCapabilityV10R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-SNAPSHOT-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.73 = STRING: 
+        Agent capabilities for SNMPv2-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoSnmpV2CapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS SNMPv2-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.74 = STRING: 
+        Agent capabilities for SNMPv2-PARTY-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoSnmpV2PartyCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS SNMPv2-PARTY-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.75 = STRING: 
+        Agent capabilities for SOURCE-ROUTING-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoSourceRoutingCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS SOURCE-ROUTING-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.76 = STRING: 
+        Agent capabilities for CISCO-TCP-MIB
+        LAST-UPDATED 9408180000Z 
+        ciscoTcpCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS CISCO-TCP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.77 = STRING: 
+        Agent capabilities for the CISCO-TCPOFFLOAD-MIB
+        LAST-UPDATED 9706230000Z 
+        ciscoTcpOffloadCapabilityV11R02 AGENT-CAPABILITIES
+        SUPPORTS CISCO-TCPOFFLOAD-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.78 = STRING: 
+        Agent capabilities for UDP-MIB
+        LAST-UPDATED 9611270000Z 
+        ciscoUdpCapabilityV11R02 AGENT-CAPABILITIES
+        SUPPORTS UDP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.79 = STRING: 
+        Agent capabilities for CISCO-VOICE-ANALOG-IF-MIB        
+                REVISION    
+        LAST-UPDATED 200304280000Z 
+        ciscoVoiceAnalogIfCapabilityV11R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-VOICE-ANALOG-IF-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.80 = STRING: 
+        Agent capabilities for CISCO-VOICE-DIAL-CONTROL-MIB.
+        LAST-UPDATED 200611160000Z 
+        ciscoVoiceDialControlCapV12R04 AGENT-CAPABILITIES
+         SUPPORTS CISCO-VOICE-DIAL-CONTROL-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.81 = STRING: 
+        Agent capabilities for CISCO-VOICE-IF-MIB
+        LAST-UPDATED 9706150000Z 
+        ciscoVoiceIfCapabilityV11R03 AGENT-CAPABILITIES
+        SUPPORTS CISCO-VOICE-IF-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.82 = STRING: 
+        
+        LAST-UPDATED 200603010000Z 
+        ciscoXgcpCapabilityV5R300 AGENT-CAPABILITIES
+         SUPPORTS CISCO-XGCP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.83 = STRING: 
+        The capabilities description of
+                         CISCO-XGCP-EXT-MIB.
+        LAST-UPDATED 200406180000Z 
+        ciscoXgcpExtCapabilityV12R03 AGENT-CAPABILITIES
+         SUPPORTS CISCO-XGCP-EXT-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.84 = STRING: 
+        Agent capabilities for MPLS-LSR-MIB                        LAST-UPDATED    
+        LAST-UPDATED 200109011200Z 
+        mplsLsrMibCapabilityV12R0 AGENT-CAPABILITIES
+        SUPPORTS MPLS-LSR-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.85 = STRING: 
+        Agent capabilities for MPLS-TE-MIB        
+           -- Revision history.
+        
+           REVISION
+                  
+        LAST-UPDATED
+        mplsTeCapabilityV10R00 AGENT-CAPABILITIES
+        SUPPORTS MPLS-TE-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.86 = STRING: 
+        Agent capabilities for OLD-CISCO-APPLETALK-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoAppletalkCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-APPLETALK-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.87 = STRING: 
+        Agent capabilities for OLD-CISCO-CHASSIS-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoChassisCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-CHASSIS-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.88 = STRING: 
+        Agent capabilities for OLD-CISCO-CPU-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoCpuCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-CPU-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.89 = STRING: 
+        Agent capabilities for OLD-CISCO-DECNET-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoDECnetCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-DECNET-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.90 = STRING: 
+        Agent capabilities for OLD-CISCO-ENV-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoEnvCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-ENV-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.91 = STRING: 
+        Agent capabilities for OLD-CISCO-FLASH-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoFlashCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-FLASH-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.92 = STRING: 
+        Agent capabilities for OLD-CISCO-INTERFACES-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoIfCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-INTERFACES-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.93 = STRING: 
+        Agent capabilities for OLD-CISCO-IP-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoIpCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-IP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.94 = STRING: 
+        Agent capabilities for OLD-CISCO-MEMORY-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoMemoryCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-MEMORY-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.95 = STRING: 
+        Agent capabilities for OLD-CISCO-NOVELL-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoNovellCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-NOVELL-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.96 = STRING: 
+        Agent capabilities for OLD-CISCO-SYSTEM-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoSystemCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-SYSTEM-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.97 = STRING: 
+        Agent capabilities for OLD-CISCO-TCP-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoTcpCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-TCP-MIB
+        File name: ios        
+SNMPv2-MIB::sysORDescr.98 = STRING: 
+        Agent capabilities for OLD-CISCO-TS-MIB
+        LAST-UPDATED 9408180000Z 
+        oldCiscoTsCapabilityV10R02 AGENT-CAPABILITIES
+        SUPPORTS OLD-CISCO-TS-MIB
+        File name: ios        
+SNMPv2-MIB::sysORUpTime.1 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.2 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.3 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.4 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.5 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.6 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.7 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.8 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.9 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.10 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.11 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.12 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.13 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.14 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.15 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.16 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.17 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.18 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.19 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.20 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.21 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.22 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.23 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.24 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.25 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.26 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.27 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.28 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.29 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.30 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.31 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.32 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.33 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.34 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.35 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.36 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.37 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.38 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.39 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.40 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.41 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.42 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.43 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.44 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.45 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.46 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.47 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.48 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.49 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.50 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.51 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.52 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.53 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.54 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.55 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.56 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.57 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.58 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.59 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.60 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.61 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.62 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.63 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.64 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.65 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.66 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.67 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.68 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.69 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.70 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.71 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.72 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.73 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.74 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.75 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.76 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.77 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.78 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.79 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.80 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.81 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.82 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.83 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.84 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.85 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.86 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.87 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.88 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.89 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.90 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.91 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.92 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.93 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.94 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.95 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.96 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.97 = Timeticks: (0) 0:00:00.00
+SNMPv2-MIB::sysORUpTime.98 = Timeticks: (0) 0:00:00.00
+

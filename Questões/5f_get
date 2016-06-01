@@ -1,0 +1,2 @@
+[root@Labs5610 ar]# snmpget -v 2c -c Leitura 172.16.1.1 iso.org.dod.internet.mgmt.mib-2.system.sysName.0
+SNMPv2-MIB::sysName.0 = STRING: R1
