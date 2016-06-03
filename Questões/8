@@ -1,0 +1,12 @@
+R1#configure 
+Configuring from terminal, memory, or network [terminal]? 
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#snmp-server group autenticacao v3 auth
+R1(config)#snmp-server user grupo11 autenticacao v3 auth md5 passlimi         
+R1(config)#
+*Mar  1 01:14:09.455: Configuring snmpv3 USM user, persisting snmpEngineBoots. Please Wait...
+
+R1(config)#snmp-server user grupo11 autenticacao v3 auth md5 passlimi
+R1(config)#snmp-server group cifragem v3 priv   
+R1(config)#$agrupo11 cifragem v3 auth md5 passlimi priv des cifralimi          
+R1(config)#end

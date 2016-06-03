@@ -1,0 +1,6 @@
+[root@Labs5610 ar]# snmptrapd -n -f -Lo
+NET-SNMP version 5.7.3
+2016-06-02 10:38:04 172.16.1.1(via UDP: [172.16.1.1]:62413->[172.16.1.2]:162) TRAP, SNMP v1, community traps7
+	SNMPv2-MIB::snmpTraps Link Down Trap (0) Uptime: 0:27:01.63
+	IF-MIB::ifIndex.5 = INTEGER: 5	IF-MIB::ifDescr.5 = STRING: FastEthernet1/2IF-MIB::ifType.5 = INTEGER: ethernetCsmacd(6)	SNMPv2-SMI::enterprises.9.2.2.1.1.20.5 = STRING: "administratively down"
+

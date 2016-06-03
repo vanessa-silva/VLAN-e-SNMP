@@ -1,0 +1,8 @@
+[root@Labs5610 ar]# snmptable -v 2c -c Leitura 172.16.1.1 ip.ipAddrTable
+SNMP table: IP-MIB::ipAddrTable
+
+ ipAdEntAddr ipAdEntIfIndex ipAdEntNetMask ipAdEntBcastAddr ipAdEntReasmMaxSize
+    10.0.0.1             22  255.255.255.0                1               18024
+  172.16.1.1             21  255.255.255.0                1               18024
+  172.20.0.1             23  255.255.255.0                1               18024
+

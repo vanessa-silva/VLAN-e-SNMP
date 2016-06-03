@@ -1,0 +1,8 @@
+[ar@Labs5610 ~]$ snmpgetnext -v2c -c Leitura 172.16.1.1 system.sysName
+SNMPv2-MIB::sysName.0 = STRING: R1
+[ar@Labs5610 ~]$ snmpgetnext -v3 -l authNoPriv -u grupo11 -a md5 -A passlimi 172.16.1.1 system.sysName
+SNMPv2-MIB::sysName.0 = STRING: R1
+[ar@Labs5610 ~]$ snmpgetnext -v3 -l authPriv -u cifragrupo11 -a md5 -A passlimi -x des -X cifralimi 172.16.1.1 system.sysName
+SNMPv2-MIB::sysName.0 = STRING: R1
+[ar@Labs5610 ~]$ 
+
