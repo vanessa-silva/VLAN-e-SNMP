@@ -1,2 +1,0 @@
-[root@Labs5610 ar]# snmpget -v 2c -c Leitura 172.16.1.1 iso.org.dod.internet.mgmt.mib-2.system.sysDescr
-SNMPv2-MIB::sysDescr = No Such Instance currently exists at this OID
