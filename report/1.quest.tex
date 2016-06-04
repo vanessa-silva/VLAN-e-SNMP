@@ -2,19 +2,19 @@
 \paragraph{1.}
 
 \subparagraph{a.}
-Capture do primeiro ICMP \emph{Echo Request} enviado em ambas as interfaces:
+Captura do primeiro ICMP \emph{Echo Request} enviado em ambas as interfaces:
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth, height=0.33\textheight]{1_interface00-groucho.png}
+\includegraphics[width=1\textwidth, height=0.32\textheight]{1_interface00-groucho.png}
 \label{fig:2-capturaWireshark}
 \caption{Captura \emph{wireshark} na interface \textsf{f0/0} de \textsf{groucho}.}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth, height=0.33\textheight]{1_interface10-R1.png}
-\label{fig:2-capturaWireshark}
+\includegraphics[width=1\textwidth, height=0.32\textheight]{1_interface10-R1.png}
+\label{fig:3-capturaWireshark}
 \caption{Captura \emph{wireshark} na interface \textsf{f1/0} de \textsf{R1}.}
 \end{figure}
 
@@ -22,9 +22,21 @@ Capture do primeiro ICMP \emph{Echo Request} enviado em ambas as interfaces:
 \subparagraph{b.}
 Quais foram as diferenças encontradas e a que se devem? (texRes)
 
+%no primeiro ICMP \emph{Echo Request} enviado na interface de R1 encontra-se um encapsulamento diferente 802.1Q (portas trunk), ao contrário de na intergace do groucho.
+
 
 \paragraph{2.}
-Altere o endereço IP de averell para 10.0.0.4, que pertence à mesma subnet de groucho. Faça um ping de averell para groucho. Diga o que observa e explique a razão para ser assim.
+Na interface \textsf{f1/0} de \textsf{R1} podemos observar que é enviadas várias
+mensagens ARP (ARP \emph{Request}) em \emph{Broadcast}, 
+(\texttt{Who has 10.0.0.2? Tell 10.0.0.4}), que significa que o \emph{host} 
+10.0.0.4 está a tentar descobrir quem é a máquina 10.0.0.2, à qual não se obteve
+nenhuma resposta.
+
+Isto acontece porque as portas de \textsf{SW1} estão configuradas em 
+\textbf{modo acesso} na VLAN 10 (\textsf{groucho}) e na VLAN20  (\textsf{averell}), 
+apesar de ambos os IPs (de \textsf{groucho} e \textsf{averell}) pertencerem à mesma subnet, o \texttt{ping} nunca chega à máquina do \textsf{groucho} (na captura 
+\emph{wireshark} na interface \textsf{f0/0} não chega nenhuma mensagem) uma vez que 
+as máquinas pertencem a VLANs diferentes.
 
 
 \paragraph{3.}
@@ -32,8 +44,8 @@ Altere o endereço IP de averell para 10.0.0.4, que pertence à mesma subnet de 
  
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth, height=0.33\textheight]{3_interface10_R1.png}
-\label{fig:2-capturaWireshark}
+\includegraphics[width=1\textwidth, height=0.38\textheight]{3_interface10_R1.png}
+\label{fig:4-capturaWireshark}
 \caption{Captura \emph{wireshark} na interface \textsf{f1/0} de \textsf{R1}.}
 \end{figure}
 
@@ -41,7 +53,7 @@ Altere o endereço IP de averell para 10.0.0.4, que pertence à mesma subnet de 
 \paragraph{4.}
 
 \subparagraph{a.}
-Para que a ligação entre \textsf{R1} e o terminal \textsf{linux} funcionar em modo \emph{trunk} tivemos de realizar as seguintes configurações.
+Para que a ligação entre \textsf{R1} e o terminal \textsf{linux} funcione em modo \emph{trunk} tivemos de realizar as seguintes configurações.
 
 No \emph{router} \textsf{R1}:
 \begin{verbatim}
@@ -50,7 +62,7 @@ switchport trunk encapsulation dot1q
 switchport mode trunk
 \end{verbatim}
 
-No \textsf{linux}:
+No terminal \textsf{linux}:
 \begin{verbatim}
 [root@Labs5610 ar]# modprobe 8021q
 [root@Labs5610 ar]# vconfig add tap0 10
@@ -61,19 +73,19 @@ Added VLAN with VID == 10 to IF -:tap0:-
 
 
 \subparagraph{b.}
-Capture de um pacote do ping (ICMP) enviado em ambas as interfaces:
+Captura de um pacote do \textsf{ping} (ICMP) enviado em ambas as interfaces:
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth, height=0.33\textheight]{ping_VLAN1.png}
-\label{fig:2-capturaWireshark}
+\label{fig:5-capturaWireshark}
 \caption{Captura \emph{wireshark} de um pacote do \texttt{ping} enviado do terminal \textsf{linux} para a \textsf{VLAN 1}.}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth, height=0.33\textheight]{ping_VLAN10.png}
-\label{fig:2-capturaWireshark}
+\label{fig:6-capturaWireshark}
 \caption{Captura \emph{wireshark} de um pacote do \texttt{ping} enviado do terminal \textsf{linux} para a \textsf{VLAN 10}.}
 \end{figure}
 
@@ -121,7 +133,7 @@ Diga para que serve o walk e explique como funciona, indicando as mensagens SNMP
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth, height=0.33\textheight]{5d.png}
-\label{fig:2-capturaWireshark}
+\label{fig:7-capturaWireshark}
 \caption{Captura \emph{wireshark} de pacotes SNMP na interface \textsf{f1/3} de \textsf{R1}.}
 \end{figure}
 
@@ -150,14 +162,14 @@ Faça um walk e um bulkwalk à sub-árvore system da MIB-2. Qual é a diferença
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth, height=0.33\textheight]{5g_walk.png}
-\label{fig:2-capturaWireshark}
+\label{fig:8-capturaWireshark}
 \caption{Captura \emph{wireshark} de pacotes \texttt{snmpwalk}.}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth, height=0.33\textheight]{5g_bulkwalk.png}
-\label{fig:2-capturaWireshark}
+\label{fig:9-capturaWireshark}
 \caption{Captura \emph{wireshark} de pacotes \texttt{bulkwalk}.}
 \end{figure}
 
@@ -234,7 +246,7 @@ Inicie uma nova captura wireshark na interface f1/3 de R1. Simule a falha da lig
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth, height=0.33\textheight]{7a.png}
-\label{fig:2-capturaWireshark}
+\label{fig:10-capturaWireshark}
 \caption{Captura \emph{wireshark} na interface \textsf{1/3} de \textsf{R1}.}
 \end{figure}
 
@@ -245,7 +257,7 @@ Captura de pacotes SNMP na interface \textsf{f1/3} de \textsf{R1}:
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth, height=0.33\textheight]{7b.png}
-\label{fig:2-capturaWireshark}
+\label{fig:11-capturaWireshark}
 \caption{Captura \emph{wireshark} na interface \textsf{1/3} de \textsf{R1}.}
 \end{figure}
 
@@ -256,7 +268,7 @@ Captura de pacotes SNMP na interface \textsf{f1/3} de \textsf{R1}:
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth, height=0.33\textheight]{7c.png}
-\label{fig:2-capturaWireshark}
+\label{fig:12-capturaWireshark}
 \caption{Captura \emph{wireshark} na interface \textsf{1/3} de \textsf{R1}.}
 \end{figure}
 
@@ -267,7 +279,7 @@ Captura de pacotes SNMP na interface \textsf{f1/3} de \textsf{R1}:
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth, height=0.33\textheight]{7d.png}
-\label{fig:2-capturaWireshark}
+\label{fig:13-capturaWireshark}
 \caption{Captura \emph{wireshark} na interface \textsf{1/3} de \textsf{R1}.}
 \end{figure}
 
@@ -287,7 +299,7 @@ Captura dos pacotes trocados quando executados os seguintes comandos:
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth, height=0.33\textheight]{8a1.png}
-\label{fig:2-capturaWireshark}
+\label{fig:14-capturaWireshark}
 \caption{Captura \emph{wireshark} na interface \textsf{1/3} de \textsf{R1}.}
 \end{figure}
 
@@ -297,7 +309,7 @@ Captura dos pacotes trocados quando executados os seguintes comandos:
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth, height=0.33\textheight]{8a2.png}
-\label{fig:2-capturaWireshark}
+\label{fig:15-capturaWireshark}
 \caption{Captura \emph{wireshark} na interface \textsf{1/3} de \textsf{R1}.}
 \end{figure}
 
@@ -307,7 +319,7 @@ Captura dos pacotes trocados quando executados os seguintes comandos:
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth, height=0.33\textheight]{8a3.png}
-\label{fig:2-capturaWireshark}
+\label{fig:16-capturaWireshark}
 \caption{Captura \emph{wireshark} na interface \textsf{1/3} de \textsf{R1}.}
 \end{figure}
 
