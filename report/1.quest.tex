@@ -77,14 +77,14 @@ Captura de um pacote do \textsf{ping} (ICMP) enviado em ambas as interfaces:
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth, height=0.33\textheight]{ping_VLAN1.png}
+\includegraphics[width=1\textwidth, height=0.33\textheight]{4_ping_VLAN1.png}
 \label{fig:5-capturaWireshark}
 \caption{Captura \emph{wireshark} de um pacote do \texttt{ping} enviado do terminal \textsf{linux} para a \textsf{VLAN 1}.}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth, height=0.33\textheight]{ping_VLAN10.png}
+\includegraphics[width=1\textwidth, height=0.33\textheight]{4_ping_VLAN10.png}
 \label{fig:6-capturaWireshark}
 \caption{Captura \emph{wireshark} de um pacote do \texttt{ping} enviado do terminal \textsf{linux} para a \textsf{VLAN 10}.}
 \end{figure}
@@ -97,15 +97,14 @@ Como explica o que observou na alínea anterior? (texRes)
 \paragraph{5.}
 
 \subparagraph{a.}
-Tente fazer um get ao OID iso.org.dod.internet.mgmt.mib-2.system.sysDescr de R1. Por que razão não conseguiu? (texRes)
-
 \begin{verbatim}
 [root@Labs5610 ar]# snmpget -v 2c -c Leitura 172.16.1.1 iso.org.dod.internet.mgmt.mib-2.system.sysDescr
 SNMPv2-MIB::sysDescr = No Such Instance currently exists at this OID
 \end{verbatim}
 
-"When we want to actually use this OID in practice, we’ll need to tack on another number to get the value of this variable. That is, we will need to append a .0, representing the first (and only, since a device cannot have more than one description) instance of this object.
-"
+Não se conseguiu realizar o \texttt{get} porque foi solicitada uma classe e não uma instância.
+
+Quando queremos usar um OID precisamos de adicionar um outro número para obter o valor dessa variável. Por isso, precisamos de acrescentar um \texttt{.0} que representa a primeira instância desse objeto.
 
 
 \subparagraph{b.}
@@ -119,7 +118,8 @@ Compiled Mon 07-Jul-08 04:30 by prod_rel_team
 
 
 \subparagraph{c.}
-Faça um getnext ao mesmo OID usado na alínea anterior. Para que serve o getnext? (texRes)
+O \texttt{getnext} serve para retornar a instância da classe OID, na árvore de MIB de dados, a seguir à instância descrita no comando. Ou seja, retorna o valor da variável sucessora lexicográfica.
+
 
 \begin{verbatim}
 [root@Labs5610 ar]# snmpgetnext -v 2c -c Leitura 172.16.1.1 iso.org.dod.internet.mgmt.mib-2.system.sysDescr.0
@@ -128,7 +128,12 @@ SNMPv2-MIB::sysObjectID.0 = OID: SNMPv2-SMI::enterprises.9.1.122
 
 
 \subparagraph{d.}
-Diga para que serve o walk e explique como funciona, indicando as mensagens SNMP a partir das quais se constrói e as condições de terminação. (capRes + texRes)
+O \texttt{walk} percorre todas as instâncias de todas as classes respeitando a hierarquia. É construído de  acordo com  as  respostas  que  vai  recebendo  do  \texttt{get-next-request} (ver  na captura abaixo) para recolher a informação a seguir.
+
+Ou seja, o objetivo é recupera uma sub-árvore de valores usando repetidas solicitações SNMP GetNext. 
+Se é dado um OID, este especifica qual parte do espaço serão pesquisadas usando as solicitações \texttt{getnext}. Todas as variáveis ​​na sub-árvore abaixo desse OID serão consultadas e os seus valores apresentados para o usuário.
+Se não é dados nenhum OID, o \texttt{walk} irá procurar a sub-árvore a partir de SNMPv2-SMI :: mib-2.
+O \texttt{walk} para quando retorna resultados que já não estão dentro do alcance do OID.
 
 \begin{figure}[h]
 \centering
@@ -140,6 +145,36 @@ Diga para que serve o walk e explique como funciona, indicando as mensagens SNMP
 
 \subparagraph{e.}
 Com base nos resultados da alínea anterior, diga quantas interfaces tem o router e quais são elas. (texRes)
+
+O \emph{router} tem 22 interfaces, que são as que se seguem (parte da resposta do \texttt{snmpwalk} no terminal \textsc{linux}):
+
+\begin{verbatim}
+IF-MIB::ifNumber.0 = INTEGER: 22
+...
+IF-MIB::ifDescr.1 = STRING: FastEthernet0/0
+IF-MIB::ifDescr.2 = STRING: FastEthernet0/1
+IF-MIB::ifDescr.3 = STRING: FastEthernet1/0
+IF-MIB::ifDescr.4 = STRING: FastEthernet1/1
+IF-MIB::ifDescr.5 = STRING: FastEthernet1/2
+IF-MIB::ifDescr.6 = STRING: FastEthernet1/3
+IF-MIB::ifDescr.7 = STRING: FastEthernet1/4
+IF-MIB::ifDescr.8 = STRING: FastEthernet1/5
+IF-MIB::ifDescr.9 = STRING: FastEthernet1/6
+IF-MIB::ifDescr.10 = STRING: FastEthernet1/7
+IF-MIB::ifDescr.11 = STRING: FastEthernet1/8
+IF-MIB::ifDescr.12 = STRING: FastEthernet1/9
+IF-MIB::ifDescr.13 = STRING: FastEthernet1/10
+IF-MIB::ifDescr.14 = STRING: FastEthernet1/11
+IF-MIB::ifDescr.15 = STRING: FastEthernet1/12
+IF-MIB::ifDescr.16 = STRING: FastEthernet1/13
+IF-MIB::ifDescr.17 = STRING: FastEthernet1/14
+IF-MIB::ifDescr.18 = STRING: FastEthernet1/15
+IF-MIB::ifDescr.20 = STRING: Null0
+IF-MIB::ifDescr.21 = STRING: Vlan1
+IF-MIB::ifDescr.22 = STRING: Vlan10
+IF-MIB::ifDescr.23 = STRING: Vlan20
+...
+\end{verbatim}
 
 
 \subparagraph{f.}
@@ -158,6 +193,31 @@ SNMPv2-MIB::sysName.0 = STRING: R2
 
 \subparagraph{g.}
 Faça um walk e um bulkwalk à sub-árvore system da MIB-2. Qual é a diferença entre estes dois comandos e em que se traduz na prática? (2×capRes + texRes)
+
+O \texttt{bulkwalk} obtém a informação com apenas um pedido, uma vez que usa solicitações SNMP GetBulk (\texttt{get-bulk-request} permite a transferência de grandes volumes de informação). Enquanto que o \texttt{walk} usa solicitações SNMP GetNext, que realiza um pedido para cada variável. A vantagem é o ganho em termos de eficiência.Podemos  ver  a  diferença  na  quantidade  de  pedidos  entre  os  2,  através  das  setas  a vermelho nas capturas
+
+get-next-pedido retorna o item na MIB logo após o item especificado . 
+
+snmpbulkwalk é uma aplicação SNMP que usa solicitações SNMP GetBulk para consultar uma entidade de rede de forma eficiente.
+
+
+A operação GetBulk é normalmente usada para recuperar grande quantidade de dados. Um pedido GetBulk é feito dando uma lista OID junto com um valor Max-repetições e um valor Nonrepeaters.
+ 
+A operação GetBulk executa uma operação contínua GETNEXT com base no valor Max-repetições. O valor Nonrepeaters determina o número de variáveis ​​na lista de variáveis ​​para as quais uma operação GETNEXT simples tem de ser feito. Para as demais variáveis, a operação GETNEXT contínua é feito com base no valor Max-Repetições.
+ 
+Em outras palavras, a operação SNMP GetBulk faz uma operação GETNEXT simples para as primeiras ligações variável n no pedido e faz operação de M GETNEXT (contínua) para cada um dos restantes ligações de R variáveis ​​na lista de pedidos onde
+
+N é o mínimo de
+o valor do campo não repetidores no pedido
+o número de ligações de variáveis ​​no pedido
+M é o campo Max-repetições do pedido
+ 
+R é o máximo de
+o número de ligações de variáveis ​​no pedido
+zero
+Assim, o número total de varbinds na mensagem de resposta é (N + H x R).
+
+
 
 \begin{figure}[h]
 \centering
