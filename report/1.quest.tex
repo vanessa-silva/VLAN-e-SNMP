@@ -97,6 +97,7 @@ Captura de um pacote do \textsf{ping} (ICMP) enviado em ambas as interfaces:
 
 \subparagraph{c.}
 %Como explica o que observou na alínea anterior? (texRes)
+Como a conexão R1-linux é feita em modo trunk com uma interface para a VLAN 1 e VLAN 10, ao fazer ping para um endereço da VLAN 10 este recebe a trama de 802.1Q identificando o pacote que passa pela conexão em modo trunk como pertencente à VLAN 10. O ping para uma interface na VLAN 1, como é a VLAN default, carece do campo de 802.1Q.
 
 
 \paragraph{5.}
@@ -287,7 +288,37 @@ SNMP table: IP-MIB::ipAddrTable
 
 
 \subparagraph{b.}
-Com base na sua definição no módulo IP-MIB, explique o que faz com que ip.ipAddrTable seja uma tabela. (texRes)
+%Com base na sua definição no módulo IP-MIB, explique o que faz com que ip.ipAddrTable seja uma tabela. (texRes)
+Com base no RFC 2011, é possível observarmos uma deifinição parcial do módulo IP-MIB. O que faz com que ip.ipAddrTable seja uma tabela, consiste na presença da característica opcional "INDEX { ipAdEntAddr }" existente na definição do tipo de cada objeto que ipAddrTable tem em sequência. Sendo assim, obtemos uma tabela indexada a IpAddrEntry.ipAdEntAddr.
+
+\begin{verbatim}
+ipAddrTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IpAddrEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+            "The table of addressing information relevant to this
+            entity's IP addresses."
+    ::= { ip 20 }
+
+ipAddrEntry OBJECT-TYPE
+    SYNTAX      IpAddrEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+            "The addressing information for one of this entity's IP
+            addresses."
+    INDEX      { ipAdEntAddr }
+    ::= { ipAddrTable 1 }
+
+IpAddrEntry ::= SEQUENCE {
+        ipAdEntAddr          IpAddress,
+        ipAdEntIfIndex       INTEGER,
+        ipAdEntNetMask       IpAddress,
+        ipAdEntBcastAddr     INTEGER,
+        ipAdEntReasmMaxSize  INTEGER
+    }    
+\end{verbatim}
 
 
 \subparagraph{c.}
