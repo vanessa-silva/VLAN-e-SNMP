@@ -20,7 +20,8 @@ Captura do primeiro ICMP \emph{Echo Request} enviado em ambas as interfaces:
 
 
 \subparagraph{b.}
-Quais foram as diferenças encontradas e a que se devem? (texRes)
+%Quais foram as diferenças encontradas e a que se devem? (texRes)
+A diferença dos pacotes que passam entre  R1-SW1 e SW1-groucho consiste na existência do campo de 4 bytes dedicado ao encapsulamento 802.1Q nos pacotes entre R1-SW1, devido à porta entre estes estar configurada no modo Trunk. Como entre SW1-groucho há uma VLAN dedicada, a trama é descartada.
 
 %no primeiro ICMP \emph{Echo Request} enviado na interface de R1 encontra-se um encapsulamento diferente 802.1Q (portas trunk), ao contrário de na intergace do groucho.
 
@@ -40,7 +41,9 @@ as máquinas pertencem a VLANs diferentes.
 
 
 \paragraph{3.}
- Faça um ping de groucho para averell. O que observa em relação aos pacotes ICMP? (capRes + texRes)
+% Faça um ping de groucho para averell. O que observa em relação aos pacotes ICMP? (capRes + texRes)
+É possível notar que o request ICMP é bem sucedido de groucho a averell mas não no sentido oposto. O ICMP reply não consegue voltar ao destino, mesmo com o routing de R1, pois groucho não está na VLAN default (ao contrário de averell).
+ 
  
 \begin{figure}[h]
 \centering
@@ -93,7 +96,7 @@ Captura de um pacote do \textsf{ping} (ICMP) enviado em ambas as interfaces:
 \newpage
 
 \subparagraph{c.}
-Como explica o que observou na alínea anterior? (texRes)
+%Como explica o que observou na alínea anterior? (texRes)
 
 
 \paragraph{5.}
