@@ -20,14 +20,11 @@ Captura do primeiro ICMP \emph{Echo Request} enviado em ambas as interfaces:
 
 
 \subparagraph{b.}
-%Quais foram as diferenças encontradas e a que se devem? (texRes)
-A diferença dos pacotes que passam entre  R1-SW1 e SW1-groucho consiste na existência do campo de 4 bytes dedicado ao encapsulamento 802.1Q nos pacotes entre R1-SW1, devido à porta entre estes estar configurada no modo Trunk. Como entre SW1-groucho há uma VLAN dedicada, a trama é descartada.
-
-%no primeiro ICMP \emph{Echo Request} enviado na interface de R1 encontra-se um encapsulamento diferente 802.1Q (portas trunk), ao contrário de na intergace do groucho.
+A diferença dos pacotes que passam entre \textsf{R1}-\textsf{SW1} e \textsf{SW1}-\textsf{groucho} consiste na existência do campo de 4 \emph{bytes} dedicado ao encapsulamento \textsf{802.1Q} nos pacotes entre \textsf{R1}-\textsf{SW1}, devido à porta entre estes estar configurada no modo \emph{trunk}. Como entre \textsf{SW1}-\textsf{groucho} há uma VLAN dedicada, a trama é descartada.
 
 
 \paragraph{2.}
-Na interface \textsf{f1/0} de \textsf{R1} podemos observar que é enviadas várias
+Na interface \textsf{f1/0} de \textsf{R1} podemos observar que são enviadas várias
 mensagens ARP (ARP \emph{Request}) em \emph{Broadcast}, 
 (\texttt{Who has 10.0.0.2? Tell 10.0.0.4}), que significa que o \emph{host} 
 10.0.0.4 está a tentar descobrir quem é a máquina 10.0.0.2, à qual não se obteve
@@ -41,8 +38,7 @@ as máquinas pertencem a VLANs diferentes.
 
 
 \paragraph{3.}
-% Faça um ping de groucho para averell. O que observa em relação aos pacotes ICMP? (capRes + texRes)
-É possível notar que o request ICMP é bem sucedido de groucho a averell mas não no sentido oposto. O ICMP reply não consegue voltar ao destino, mesmo com o routing de R1, pois groucho não está na VLAN default (ao contrário de averell).
+É possível notar que o \emph{request} ICMP é bem sucedido de \textsf{groucho} a \textsf{averell} mas não no sentido oposto. O ICMP \emph{reply} não consegue voltar ao destino, mesmo com o \emph{routing} de \textsf{R1}, pois \textsf{groucho} não está na VLAN \emph{default} (ao contrário de \textsf{averell}).
  
  
 \begin{figure}[h]
@@ -93,12 +89,11 @@ Captura de um pacote do \textsf{ping} (ICMP) enviado em ambas as interfaces:
 \caption{Captura \emph{wireshark} de um pacote do \texttt{ping} enviado do terminal \textsf{linux} para a \textsf{VLAN 10}.}
 \end{figure}
 
-\newpage
 
 \subparagraph{c.}
-%Como explica o que observou na alínea anterior? (texRes)
-Como a conexão R1-linux é feita em modo trunk com uma interface para a VLAN 1 e VLAN 10, ao fazer ping para um endereço da VLAN 10 este recebe a trama de 802.1Q identificando o pacote que passa pela conexão em modo trunk como pertencente à VLAN 10. O ping para uma interface na VLAN 1, como é a VLAN default, carece do campo de 802.1Q.
+Como a conexão \textsf{R1}-\textsf{linux} é feita em modo \emph{trunk} com uma interface para a VLAN 1 e VLAN 10, ao fazer \texttt{ping} para um endereço da VLAN 10 este recebe a trama de \textsf{802.1Q} identificando o pacote que passa pela conexão em modo \emph{trunk} como pertencente à VLAN 10. O \texttt{ping} para uma interface na VLAN 1, como é a VLAN \emph{default}, carece do campo de \textsf{802.1Q}.
 
+\newpage
 
 \paragraph{5.}
 
@@ -111,7 +106,7 @@ SNMPv2-MIB::sysDescr = No Such Instance currently exists at this OID
 
 Não se conseguiu realizar o \texttt{get} porque foi solicitada uma classe e não uma instância.
 
-Quando queremos usar um OID precisamos de adicionar um outro número para obter o valor dessa variável. Por isso, precisamos de acrescentar um \texttt{.0} que representa a primeira instância desse objeto.
+Quando queremos usar um OID precisamos de adicionar um outro número para obter o valor dessa variável. Por isso, precisamos de acrescentar um "\texttt{.0}" que representa a primeira instância (e único, uma vez que um dispositivo não pode ter mais de uma descrição) desse objeto.
 
 
 \subparagraph{b.}
@@ -127,7 +122,7 @@ Compiled Mon 07-Jul-08 04:30 by prod_rel_team
 
 
 \subparagraph{c.}
-O \texttt{getnext} serve para retornar a instância da classe OID, na árvore de MIB de dados, a seguir à instância descrita no comando. Ou seja, retorna o valor da variável sucessora lexicográfica.
+O \texttt{getnext} serve para retornar a instância da classe OID, na árvore de MIB de dados, a seguir à instância descrita no comando. Ou seja, retorna o valor das instânciaa de variáveis cujos OID são imediatamente sucessoras lexicográfica aos OID indicados.
 
 
 \begin{verbatim}
@@ -139,12 +134,12 @@ SNMPv2-MIB::sysObjectID.0 = OID: SNMPv2-SMI::enterprises.9.1.122
 
 \subparagraph{d.}
 O \texttt{walk} percorre todas as instâncias de todas as classes respeitando a hierarquia. É construído de  acordo com  as  respostas  que  vai  recebendo  do  \texttt{get-next-request} (ver  na captura abaixo) para recolher a informação a seguir.
-
 Ou seja, o objetivo é recupera uma sub-árvore de valores usando repetidas solicitações SNMP GetNext.
 
 Se é dado um OID, este especifica qual parte do espaço serão pesquisadas usando as solicitações \texttt{getnext}. Todas as variáveis na sub-árvore abaixo desse OID serão consultadas e os seus valores mostrados ao utilizador.
 
-Se não é dados nenhum OID, o \texttt{walk} irá procurar a sub-árvore a partir de SNMPv2-SMI :: mib-2.
+Se não é dado nenhum OID, o \texttt{walk} irá procurar a sub-árvore a partir de SNMPv2-SMI :: mib-2.
+
 O \texttt{walk} para quando retorna resultados que já não estão dentro do alcance do OID.
 
 \begin{figure}[h]
@@ -157,8 +152,6 @@ O \texttt{walk} para quando retorna resultados que já não estão dentro do alc
 \newpage
 
 \subparagraph{e.}
-Com base nos resultados da alínea anterior, diga quantas interfaces tem o router e quais são elas. (texRes)
-
 O \emph{router} tem 22 interfaces, que são as que se seguem (parte da resposta do \texttt{snmpwalk} no terminal \textsc{linux}):
 
 \begin{verbatim}
@@ -189,6 +182,7 @@ IF-MIB::ifDescr.23 = STRING: Vlan20
 ...
 \end{verbatim}
 
+\newpage
 
 \subparagraph{f.}
 Resultado do \texttt{get}:
@@ -198,7 +192,7 @@ Resultado do \texttt{get}:
 SNMPv2-MIB::sysName.0 = STRING: R1
 \end{verbatim}
 
-Comando usado para fazer o \texttt{set}:
+Comando usado para fazer o \texttt{set} e respetivo resultado:
 \begin{verbatim}
 [root@Labs5610 ar]# snmpset -v 2c -c Escrita 172.16.1.1
  iso.org.dod.internet.mgmt.mib-2.system.sysName.0 s R2
@@ -209,8 +203,12 @@ SNMPv2-MIB::sysName.0 = STRING: R2
 \subparagraph{g.}
 Faça um walk e um bulkwalk à sub-árvore system da MIB-2. Qual é a diferença entre estes dois comandos e em que se traduz na prática????? (2×capRes + texRes)
 
-O \texttt{bulkwalk} obtém a informação com apenas um pedido, uma vez que usa solicitações SNMP GetBulk (\texttt{get-bulk-request} que permite a transferência de grandes volumes de informação). Enquanto que o \texttt{walk} usa solicitações SNMP GetNext, que realiza um pedido para cada variável, como já foi explicado acima.
-A vantagem do \texttt{bulkwalk} em relação ao \texttt{walk} é o ganho em termos de eficiência. Nas capturas a seguir podemos reparar na diferença de quantidade de pedidos  feitos entre os 2, através da barra lateral.
+O \texttt{bulkwalk} obtém a informação com apenas um pedido, uma vez que usa solicitações SNMP GetBulk (\texttt{get-bulk-request} que permite a transferência de grandes volumes de informação).
+Enquanto que o \texttt{walk} usa solicitações SNMP GetNext, que realiza um pedido para cada variável, como já foi explicado acima.
+
+A vantagem do \texttt{bulkwalk} em relação ao \texttt{walk} é o ganho em termos de eficiência.
+
+Nas capturas a seguir podemos reparar na diferença de quantidade de pedidos  feitos entre os 2, através da barra lateral.
 
 
 \begin{figure}[h]
@@ -288,8 +286,7 @@ SNMP table: IP-MIB::ipAddrTable
 
 
 \subparagraph{b.}
-%Com base na sua definição no módulo IP-MIB, explique o que faz com que ip.ipAddrTable seja uma tabela. (texRes)
-Com base no RFC 2011, é possível observarmos uma deifinição parcial do módulo IP-MIB. O que faz com que ip.ipAddrTable seja uma tabela, consiste na presença da característica opcional "INDEX { ipAdEntAddr }" existente na definição do tipo de cada objeto que ipAddrTable tem em sequência. Sendo assim, obtemos uma tabela indexada a IpAddrEntry.ipAdEntAddr.
+Com base no RFC 2011, é possível observarmos uma definição parcial do módulo IP-MIB. O que faz com que \textsf{ip.ipAddrTable} seja uma tabela, consiste na presença da característica opcional "\texttt{INDEX { ipAdEntAddr }}" existente na definição do tipo de cada objeto que \textsf{ipAddrTable} tem em sequência. Sendo assim, obtemos uma tabela indexada a \textsf{IpAddrEntry.ipAdEntAddr}.
 
 \begin{verbatim}
 ipAddrTable OBJECT-TYPE
@@ -322,8 +319,6 @@ IpAddrEntry ::= SEQUENCE {
 
 
 \subparagraph{c.}
-Diga como se mapeiam as linhas (índices) e as colunas de uma tabela em OIDs na estrutura em árvore da MIB. (texRes)
-
 Para mapear tabelas na estrutura em árvore é necessário definir parte da MIB como tabular e mapear a linha e a coluna da tabela no OID que contém a respetiva entrada.
 
 É de notar que, a coluna pode ser sempre identificada por um número (número da coluna), a linha é identificada pelo índice, e que no mapeamento para o OID, aparece primeiro a coluna e depois  a linha.
@@ -346,7 +341,9 @@ NET-SNMP version 5.7.3
 	SNMPv2-SMI::enterprises.9.2.2.1.1.20.5 = STRING: "administratively down"
 \end{verbatim}
 
-Onde podemos ver que é informado que a ligação da interface \textsf{f1/2} (\texttt{IF-MIB::ifDescr.5 = STRING: FastEthernet1/2}) é desativada administrativamente ( a string \texttt{SNMPv2-SMI::enterprises.9.2.2.1.1.20.5} foi alterada para \texttt{"administratively down"}).
+Onde podemos ver que é informado que a ligação da interface \textsf{f1/2} (\texttt{IF-MIB::ifDescr.5 = STRING: FastEthernet1/2}) é desativada administrativamente ( a string
+
+\texttt{SNMPv2-SMI::enterprises.9.2.2.1.1.20.5} foi alterada para \texttt{"administratively down"}).
 
 \begin{figure}[h]
 \centering
@@ -367,7 +364,6 @@ Captura de pacotes SNMP na interface \textsf{f1/3} de \textsf{R1}:
 \caption{Captura \emph{wireshark} na interface \textsf{1/3} de \textsf{R1}.}
 \end{figure}
 
-\newpage
 
 \subparagraph{c.}
 Captura de pacotes SNMP na interface \textsf{f1/3} de \textsf{R1}:
@@ -379,6 +375,7 @@ Captura de pacotes SNMP na interface \textsf{f1/3} de \textsf{R1}:
 \caption{Captura \emph{wireshark} na interface \textsf{1/3} de \textsf{R1}.}
 \end{figure}
 
+\newpage
 
 \subparagraph{d.}
 Captura de pacotes SNMP na interface \textsf{f1/3} de \textsf{R1}:
@@ -392,8 +389,6 @@ Captura de pacotes SNMP na interface \textsf{f1/3} de \textsf{R1}:
 
 
 \subparagraph{e.}
-Com base nas alíneas anteriores, comente as diferenças entre o uso de informs e de traps, bem como as implicações práticas???? dessas diferenças. (texRes)
-
 \emph{traps} servem para notificar, de forma assíncrona, o gestor da ocorrência de um dado evento, aqui as mensagens não são confirmadas, o que implica uma entrega não-fiável. Em reação à receção de uma \emph{trap}, o gestor pode fazer pedidos para
 obter mais variáveis que lhe dêem informação adicional.
 
@@ -411,11 +406,12 @@ Captura dos pacotes trocados quando executados os seguintes comandos:
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth, height=0.28\textheight]{8a1.png}
+\includegraphics[width=1\textwidth, height=0.25\textheight]{8a1.png}
 \label{fig:14-capturaWireshark}
 \caption{Captura \emph{wireshark} na interface \textsf{1/3} de \textsf{R1}.}
 \end{figure}
 
+\newpage
 
 \item \texttt{snmpgetnext -v3 -l authNoPriv -u grupo11 -a md5 -A passlimi 172.16.1.1 system.sysName}:
 
@@ -431,13 +427,14 @@ Captura dos pacotes trocados quando executados os seguintes comandos:
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth, height=0.3\textheight]{8a3.png}
+\includegraphics[width=1\textwidth, height=0.25\textheight]{8a3.png}
 \label{fig:16-capturaWireshark}
 \caption{Captura \emph{wireshark} na interface \textsf{1/3} de \textsf{R1}.}
 \end{figure}
 
 \end{itemize}
 
+\newpage
 
 \subparagraph{b.}
 A segurança em SNMPv2 é baseada em autenticação por \emph{strings} de comunicação, uma espécie de \emph{password} partilhada que circula em \emph{clear text}, sendo este o caso menos seguro.
